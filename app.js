@@ -105,7 +105,8 @@ function initI18n() {
 }
 
 // Ensure initI18n runs after DOM loads, we will place it into init()
-\n\n// ============================================================
+
+// ============================================================
 // PROJECTS DATA
 // ============================================================
 const PROJECTS = [
@@ -665,7 +666,8 @@ document.getElementById('main-content').addEventListener('click', () => {
 // ============================================================
 // INIT
 // ============================================================
-(function init() {\n  initI18n();
+(function init() {
+  initI18n();
   renderFeaturedProjects();
   renderProjects('all'); // pre-render for first visit
 
