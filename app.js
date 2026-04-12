@@ -23,7 +23,6 @@ const TRANSLATIONS = {
     cta_title: "Masz projekt do zrealizowania?", cta_desc: "Wyślij do mnie szczegóły na maila, odezwę się jak najszybciej to możliwe z moją propozycją!",
     btn_copy: "Skopiuj Email", btn_mail: "Otwórz Pocztę",
     
-    // NEW ONES
     cat_title_anim: "Animacje", cat_title_post: "Posty", cat_title_reel: "Rolki", cat_title_poster: "Plakaty", cat_title_design: "Design", cat_title_other: "Pozostałe",
     filter_anim: "ANIMACJE", filter_post: "POSTY", filter_reel: "ROLKI", filter_poster: "PLAKATY", filter_design: "DESIGN", filter_other: "POZOSTAŁE",
     cert_label: "CERTYFIKATY", exp_title: "DOŚWIADCZENIE", skills_label: "UMIEJĘTNOŚCI", edu_title2: "WYKSZTAŁCENIE", lang_label: "JĘZYKI",
@@ -34,7 +33,8 @@ const TRANSLATIONS = {
     job_title_4: "Projektant graficzny (Staż)", edu_1_title: "Grafika Komputerowa", edu_1_desc: "2017 — 2020 · Licencjat",
     lang_pl: "Polski", lvl_native: "Ojczysty", lang_en: "Angielski", lang_de: "Niemiecki",
     contact_badge: "Dostępny do nowych projektów", contact_heading: "Masz projekt?<br><span class=\"hi-green\">Porozmawiajmy.</span>", contact_desc_2: "Chętnie poznam Twój pomysł i pomogę go zrealizować w najlepszy możliwy sposób. Odpowiadam w ciągu 24h.",
-    contact_btn_main: "SKONTAKTUJ SIĘ ZE MNĄ", cv_desc: "Pobierz moje CV<br>w formacie PDF", cv_btn_dl: "POBIERZ CV"
+    contact_btn_main: "SKONTAKTUJ SIĘ ZE MNĄ", cv_desc: "Pobierz moje CV<br>w formacie PDF", cv_btn_dl: "POBIERZ CV",
+    menu_contact_sub: "Nawiąż współpracę"
   },
   en: {
     menu_home: "HOME", menu_projects: "PROJECTS", menu_about: "ABOUT ME", menu_contact: "CONTACT", sidebar_sm: "FOLLOW MY SOCIALS:",
@@ -56,18 +56,18 @@ const TRANSLATIONS = {
     cta_title: "Have a project in mind?", cta_desc: "Send me the details via email, and I will get back to you as soon as possible with my proposal!",
     btn_copy: "Copy Email", btn_mail: "Open Mail",
     
-    // NEW ONES
     cat_title_anim: "Animations", cat_title_post: "Posts", cat_title_reel: "Reels", cat_title_poster: "Posters", cat_title_design: "Design", cat_title_other: "Other",
     filter_anim: "ANIMATIONS", filter_post: "POSTS", filter_reel: "REELS", filter_poster: "POSTERS", filter_design: "DESIGN", filter_other: "OTHER",
     cert_label: "CERTIFICATIONS", exp_title: "EXPERIENCE", skills_label: "SKILLS", edu_title2: "EDUCATION", lang_label: "LANGUAGES",
     date_present_25: "2025 — Present", date_present_21: "2021 — Present", month_feb: "February 2026", month_mar: "March 2026", month_jun: "June 2022",
     job_title_1: "Graphic Designer", job_desc_1: "Urlop.pl · Warsaw (Full-time)",
     job_title_2: "Freelance Graphic Designer", job_desc_2: "Remote / Freelance · Visual identity and advertising materials creation.",
-    job_title_3: "Computer Graphic Designer", job_desc_3: "Enfoglobe LLC · Rzeszów (Hybrid)",
+    job_title_3: "Computer Graphic Designer", job_desc_3: "Enfoglobe LLC · Rzeszow (Hybrid)",
     job_title_4: "Graphic Designer (Intern)", edu_1_title: "Computer Graphics", edu_1_desc: "2017 — 2020 · Bachelor degree",
     lang_pl: "Polish", lvl_native: "Native", lang_en: "English", lang_de: "German",
     contact_badge: "Available for new projects", contact_heading: "Have a project?<br><span class=\"hi-green\">Let's talk.</span>", contact_desc_2: "I'd love to hear about your idea and help bring it to life in the best way possible. I reply within 24h.",
-    contact_btn_main: "CONTACT ME", cv_desc: "Download my CV<br>in PDF format", cv_btn_dl: "DOWNLOAD CV"
+    contact_btn_main: "CONTACT ME", cv_desc: "Download my CV<br>in PDF format", cv_btn_dl: "DOWNLOAD CV",
+    menu_contact_sub: "Start project"
   },
   de: {
     menu_home: "STARTSEITE", menu_projects: "PROJEKTE", menu_about: "ÜBER MICH", menu_contact: "KONTAKT", sidebar_sm: "FOLGEN SIE MEINEN SM:",
@@ -89,18 +89,18 @@ const TRANSLATIONS = {
     cta_title: "Haben Sie ein Projekt im Kopf?", cta_desc: "Senden Sie mir die Details per E-Mail, ich werde mich so schnell wie möglich mit meinem Vorschlag bei Ihnen melden!",
     btn_copy: "E-Mail kopieren", btn_mail: "Mail öffnen",
     
-    // NEW ONES
     cat_title_anim: "Animationen", cat_title_post: "Beiträge", cat_title_reel: "Reels", cat_title_poster: "Plakate", cat_title_design: "Design", cat_title_other: "Andere",
     filter_anim: "ANIMATIONEN", filter_post: "BEITRÄGE", filter_reel: "REELS", filter_poster: "PLAKATE", filter_design: "DESIGN", filter_other: "ANDERE",
     cert_label: "ZERTIFIKATE", exp_title: "ERFAHRUNG", skills_label: "FÄHIGKEITEN", edu_title2: "AUSBILDUNG", lang_label: "SPRACHEN",
     date_present_25: "2025 — Heute", date_present_21: "2021 — Heute", month_feb: "Februar 2026", month_mar: "März 2026", month_jun: "Juni 2022",
     job_title_1: "Grafikdesigner", job_desc_1: "Urlop.pl · Warschau (Vollzeit)",
     job_title_2: "Freelance Grafikdesigner", job_desc_2: "Fernarbeit / Freelance · Erstellung von visuellen Identitäten und Werbematerialien.",
-    job_title_3: "Computergrafiker", job_desc_3: "Enfoglobe LLC · Rzeszów (Hybrid)",
+    job_title_3: "Computergrafiker", job_desc_3: "Enfoglobe LLC · Rzeszow (Hybrid)",
     job_title_4: "Grafikdesigner (Praktikum)", edu_1_title: "Computergrafik", edu_1_desc: "2017 — 2020 · Bachelor",
     lang_pl: "Polnisch", lvl_native: "Muttersprache", lang_en: "Englisch", lang_de: "Deutsch",
     contact_badge: "Verfügbar für neue Projekte", contact_heading: "Haben Sie ein Projekt?<br><span class=\"hi-green\">Lass uns reden.</span>", contact_desc_2: "Ich würde gerne von Ihrer Idee hören und helfen, sie auf die bestmögliche Weise umzusetzen. Ich antworte innerhalb von 24 Stunden.",
-    contact_btn_main: "KONTAKTIERE MICH", cv_desc: "Lade meinen Lebenslauf<br>im PDF-Format herunter", cv_btn_dl: "LEBENSLAUF HERUNTERLADEN"
+    contact_btn_main: "KONTAKTIERE MICH", cv_desc: "Lade meinen Lebenslauf<br>im PDF-Format herunter", cv_btn_dl: "LEBENSLAUF HERUNTERLADEN",
+    menu_contact_sub: "Zusammenarbeit"
   }
 };
 
