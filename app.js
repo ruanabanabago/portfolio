@@ -104,8 +104,6 @@ const TRANSLATIONS = {
   }
 };
 
-};
-
 let currentLang = localStorage.getItem('portfolio_lang') || 'pl';
 
 function setLanguage(lang) {
