@@ -55,7 +55,7 @@
               <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
             </svg>
           </span>
-          <span class="nav-label">HOME</span>
+          <span class="nav-label" data-i18n="menu_home">HOME</span>
           <span class="nav-indicator"></span>
         </a>
 
@@ -66,7 +66,7 @@
               <rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>
             </svg>
           </span>
-          <span class="nav-label">PROJEKTY</span>
+          <span class="nav-label" data-i18n="menu_projects">PROJEKTY</span>
           <span class="nav-indicator"></span>
         </a>
 
@@ -76,7 +76,7 @@
               <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
             </svg>
           </span>
-          <span class="nav-label">O MNIE</span>
+          <span class="nav-label" data-i18n="menu_about">O MNIE</span>
           <span class="nav-indicator"></span>
         </a>
 
@@ -87,14 +87,25 @@
               <polyline points="22,6 12,13 2,6"/>
             </svg>
           </span>
-          <span class="nav-label">KONTAKT</span>
+          <span class="nav-label" data-i18n="menu_contact">KONTAKT</span>
           <span class="nav-indicator"></span>
         </a>
       </nav>
 
       <div class="sidebar-footer">
-        <div class="sidebar-status" style="margin-bottom: 12px;">
-          <span class="status-text" style="color: var(--purple);">ZAPRASZAM NA MOJE SM:</span>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="pl" title="Polski">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 11"><rect width="16" height="11" fill="#fff"/><rect width="16" height="5.5" y="5.5" fill="#dc143c"/></svg>
+          </button>
+          <button class="lang-btn" data-lang="en" title="English">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+          </button>
+          <button class="lang-btn" data-lang="de" title="Deutsch">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 3"><rect width="5" height="3" fill="#000"/><rect width="5" height="2" y="1" fill="#D00"/><rect width="5" height="1" y="2" fill="#FFCE00"/></svg>
+          </button>
+        </div>
+        <div class="sidebar-status" style="margin-bottom: 12px; margin-top: 14px;">
+          <span class="status-text" style="color: var(--purple);" data-i18n="sidebar_sm">ZAPRASZAM NA MOJE SM:</span>
         </div>
         <div class="sidebar-social" style="margin-bottom: 0px;">
           <a href="https://www.linkedin.com/in/patryksetlak/" class="social-icon" id="sb-linkedin" title="LinkedIn" target="_blank">
@@ -123,29 +134,29 @@
           <div class="hero">
             <div class="hero-badge">
               <span class="badge-dot"></span>
-              GOTOWY DO WSPÓŁPRACY
+              <span data-i18n="hero_badge">GOTOWY DO WSPÓŁPRACY</span>
             </div>
             <h1 class="hero-title">
               <span class="glitch" data-text="PATRYK SETLAK">PATRYK SETLAK</span>
             </h1>
-            <p class="hero-subtitle">Motion Designer &amp; Visual Artist</p>
-            <p class="hero-desc">
+            <p class="hero-subtitle" data-i18n="hero_role">Motion Designer &amp; Visual Artist</p>
+            <p class="hero-desc" data-i18n-html="hero_desc">
               Tworzę <span class="hi-green">animacje</span>, <span class="hi-purple">projekty graficzne</span> i treści wizualne, które przyciągają uwagę i opowiadają historię.
             </p>
             <div class="hero-actions">
               <button class="btn-primary" onclick="navigate('projects')">
-                PRZEGLĄDAJ PROJEKTY
+                <span data-i18n="btn_projects">PRZEGLĄDAJ PROJEKTY</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </button>
-              <button class="btn-secondary" onclick="navigate('contact')">KONTAKT</button>
+              <button class="btn-secondary" onclick="navigate('contact')" data-i18n="btn_contact">KONTAKT</button>
             </div>
           </div>
 
           <!-- Stats -->
           <div class="stats-row">
-            <div class="stat-card"><span class="stat-num" data-target="120" data-suffix="+">0</span><span class="stat-label">Projektów</span></div>
-            <div class="stat-card"><span class="stat-num" data-target="13">0</span><span class="stat-label">Lata w grafice</span></div>
-            <div class="stat-card"><span class="stat-num" data-target="4" data-suffix="+">0</span><span class="stat-label">Lata Doświadczenia</span></div>
+            <div class="stat-card"><span class="stat-num" data-target="120" data-suffix="+">0</span><span class="stat-label" data-i18n="stat_projects">Projektów</span></div>
+            <div class="stat-card"><span class="stat-num" data-target="13">0</span><span class="stat-label" data-i18n="stat_years">Lata w grafice</span></div>
+            <div class="stat-card"><span class="stat-num" data-target="4" data-suffix="+">0</span><span class="stat-label" data-i18n="stat_exp">Lata Doświadczenia</span></div>
             <div class="stat-card">
               <span class="stat-num clients-name" id="clients-carousel-text" style="transition: opacity 0.2s ease;">Seqma</span>
               <div class="carousel-dots-mini" id="clients-dots"></div>
@@ -154,47 +165,47 @@
 
           <!-- Categories -->
           <div class="section-header">
-            <h2 class="section-title">KATEGORIE</h2>
+            <h2 class="section-title" data-i18n="sec_categories">KATEGORIE</h2>
             <div class="section-line"></div>
           </div>
           <div class="categories-grid">
             <div class="cat-card" onclick="navigateToCategory('Animacje')">
               <div class="cat-icon anim-col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-              <div class="cat-info"><h3>Animacje</h3><p>Motion graphics &amp; video</p></div>
+              <div class="cat-info"><h3>Animacje</h3><p data-i18n="cat_anim">Motion graphics &amp; video</p></div>
               <span class="cat-count">10</span><span class="cat-arrow">→</span>
             </div>
             <div class="cat-card" onclick="navigateToCategory('Posty')">
               <div class="cat-icon post-col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
-              <div class="cat-info"><h3>Posty</h3><p>Social media content</p></div>
+              <div class="cat-info"><h3>Posty</h3><p data-i18n="cat_post">Social media content</p></div>
               <span class="cat-count">65</span><span class="cat-arrow">→</span>
             </div>
             <div class="cat-card" onclick="navigateToCategory('Rolki')">
               <div class="cat-icon reel-col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg></div>
-              <div class="cat-info"><h3>Rolki</h3><p>Reels &amp; short-form video</p></div>
+              <div class="cat-info"><h3>Rolki</h3><p data-i18n="cat_reel">Reels &amp; short-form video</p></div>
               <span class="cat-count">17</span><span class="cat-arrow">→</span>
             </div>
             <div class="cat-card" onclick="navigateToCategory('Plakaty')">
               <div class="cat-icon poster-col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-              <div class="cat-info"><h3>Plakaty</h3><p>Print &amp; digital posters</p></div>
+              <div class="cat-info"><h3>Plakaty</h3><p data-i18n="cat_poster">Print &amp; digital posters</p></div>
               <span class="cat-count">29</span><span class="cat-arrow">→</span>
             </div>
             <div class="cat-card" onclick="navigateToCategory('Design')">
               <div class="cat-icon design-col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg></div>
-              <div class="cat-info"><h3>Design</h3><p>UI/UX &amp; branding</p></div>
+              <div class="cat-info"><h3>Design</h3><p data-i18n="cat_design">UI/UX &amp; branding</p></div>
               <span class="cat-count">3</span><span class="cat-arrow">→</span>
             </div>
             <div class="cat-card" onclick="navigateToCategory('Pozostałe')">
               <div class="cat-icon other-col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg></div>
-              <div class="cat-info"><h3>Pozostałe</h3><p>Inne projekty kreatywne</p></div>
+              <div class="cat-info"><h3>Pozostałe</h3><p data-i18n="cat_other">Inne projekty kreatywne</p></div>
               <span class="cat-count">6</span><span class="cat-arrow">→</span>
             </div>
           </div>
 
           <!-- Featured -->
           <div class="section-header">
-            <h2 class="section-title">WYBRANE PROJEKTY</h2>
+            <h2 class="section-title" data-i18n="sec_featured">WYBRANE PROJEKTY</h2>
             <div class="section-line"></div>
-            <button class="see-all" onclick="navigate('projects')">Zobacz wszystkie →</button>
+            <button class="see-all" onclick="navigate('projects')" data-i18n="btn_see_all">Zobacz wszystkie →</button>
           </div>
           <div class="featured-grid" id="featured-grid"></div>
 
@@ -205,12 +216,12 @@
       <section class="page" id="page-projects">
         <div class="page-inner">
           <div class="page-header">
-            <h1 class="page-title">PROJEKTY</h1>
-            <p class="page-subtitle">Kolekcja moich prac kreatywnych</p>
+            <h1 class="page-title" data-i18n="page_proj_title">PROJEKTY</h1>
+            <p class="page-subtitle" data-i18n="page_proj_subtitle">Kolekcja moich prac kreatywnych</p>
           </div>
 
           <div class="filters-wrap">
-            <button class="filter-btn active" data-filter="all" id="filter-all">WSZYSTKIE</button>
+            <button class="filter-btn active" data-filter="all" id="filter-all" data-i18n="filter_all">WSZYSTKIE</button>
             <button class="filter-btn" data-filter="Animacje" id="filter-animacje">ANIMACJE</button>
             <button class="filter-btn" data-filter="Posty" id="filter-posty">POSTY</button>
             <button class="filter-btn" data-filter="Rolki" id="filter-rolki">ROLKI</button>
@@ -231,8 +242,8 @@
       <section class="page" id="page-about">
         <div class="page-inner">
           <div class="page-header">
-            <h1 class="page-title">O MNIE</h1>
-            <p class="page-subtitle">Kim jestem i co robię</p>
+            <h1 class="page-title" data-i18n="page_about_title">O MNIE</h1>
+            <p class="page-subtitle" data-i18n="page_about_subtitle">Kim jestem i co robię</p>
           </div>
 
           <div class="about-bento">
@@ -245,8 +256,8 @@
               </div>
               <div class="bio-body">
                 <h2 class="bio-name">Patryk Setlak</h2>
-                <p class="bio-role">Projektant Graficzny &amp; Freelancer</p>
-                <p class="bio-text">Jestem kreatywnym projektantem graficznym z doświadczeniem freelancerskim oraz agencyjnym. Tworzę kompleksowe projekty, identyfikacje wizualne oraz materiały na social media. Nieustannie poszerzam swoje kompetencje uczestnicząc w szkoleniach i zdobywając certyfikaty Google oraz Adobe.</p>
+                <p class="bio-role" data-i18n="bio_role">Projektant Graficzny &amp; Freelancer</p>
+                <p class="bio-text" data-i18n="bio_text">Jestem kreatywnym projektantem graficznym z doświadczeniem freelancerskim oraz agencyjnym. Tworzę kompleksowe projekty, identyfikacje wizualne oraz materiały na social media. Nieustannie poszerzam swoje kompetencje uczestnicząc w szkoleniach i zdobywając certyfikaty Google oraz Adobe.</p>
                 <div class="bio-tags">
                   <span class="bio-tag">Graphic Design</span>
                   <span class="bio-tag">UI/UX</span>
@@ -349,7 +360,7 @@
 
             <!-- Tools -->
             <div class="bento-card tools-card">
-              <div class="card-label">NARZĘDZIA &amp; TECHNOLOGIE</div>
+              <div class="card-label" data-i18n="tools_label">NARZĘDZIA &amp; TECHNOLOGIE</div>
               <div class="tools-wrap">
                 <span class="tool-badge">After Effects</span>
                 <span class="tool-badge">Premiere Pro</span>
@@ -370,7 +381,7 @@
 
             <!-- Interests -->
             <div class="bento-card interests-card">
-              <div class="card-label">ZAINTERESOWANIA</div>
+              <div class="card-label" data-i18n="hobby_label">ZAINTERESOWANIA</div>
               <div class="interests-list">
                 <div class="interest-item">🎬 Stare kino akcji</div>
                 <div class="interest-item">🎸 Muzyka oraz gra na basie</div>
