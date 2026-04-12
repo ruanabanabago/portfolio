@@ -183,18 +183,10 @@ img { max-width: 100%; display: block; }
 }
 .status-text { font-size: 9px; font-weight: 600; letter-spacing: .8px; color: var(--txt3); text-transform: uppercase; }
 
-/* Mobile toggle */
-.sidebar-toggle {
-  display: none; position: fixed; top: 14px; left: 14px; z-index: 300;
-  width: 42px; height: 42px; border-radius: 8px;
-  background: var(--card); border: 1px solid var(--border);
-  color: var(--txt); align-items: center; justify-content: center;
-}
-.sidebar-toggle svg { width: 20px; height: 20px; }
-
 /* ============================================================
    MAIN CONTENT
    ============================================================ */
+.mobile-header { display: none; }
 .main-content {
   margin-left: var(--sidebar-w);
   flex: 1; min-height: 100vh;
@@ -900,9 +892,24 @@ img { max-width: 100%; display: block; }
   :root { --sidebar-w: 0px; }
   .sidebar { transform: translateX(-100%); width: 260px; }
   .sidebar.open { transform: translateX(0); }
-  .sidebar-toggle { display: flex; }
+  .sidebar-toggle {
+    display: flex; width: 40px; height: 40px; border-radius: 8px;
+    background: transparent; border: 1px solid var(--border);
+    color: var(--txt); align-items: center; justify-content: center; cursor: pointer;
+  }
+  .sidebar-toggle svg { width: 20px; height: 20px; }
+  
+  .mobile-header {
+    display: flex; position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+    height: 64px; background: rgba(5, 8, 16, 0.85); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    align-items: center; justify-content: space-between; padding: 0 16px;
+  }
+  .mobile-logo { font-size: 15px; font-weight: 800; color: var(--txt); letter-spacing: 2px; }
+  .mobile-logo .logo-bracket { color: var(--green); }
+  
   .main-content  { margin-left: 0; }
-  .page-inner    { padding: 72px 20px 48px; }
+  .page-inner    { padding: 90px 16px 48px; }
   .stats-row     { grid-template-columns: repeat(2,1fr); }
   .categories-grid, .featured-grid, .projects-bento, .about-bento, .contact-bento { grid-template-columns: 1fr; }
   .bio-card, .skills-card, .exp-card, .tools-card, .contact-hero-card { grid-column: span 1; grid-row: span 1; }
