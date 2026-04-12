@@ -5,6 +5,16 @@
 const SITE_PASSWD = "patryk2026";
 
 function checkAuth() {
+  const params = new URLSearchParams(window.location.search);
+  const urlPass = params.get('pass');
+
+  // If password provided in URL, save it and proceed
+  if (urlPass === SITE_PASSWD) {
+    sessionStorage.setItem('portfolio_auth', 'true');
+    // Optional: Clean up URL from the password
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+
   const isAuth = sessionStorage.getItem('portfolio_auth') === 'true';
   const authScreen = document.getElementById('auth-screen');
   const appContainer = document.querySelector('.app');
