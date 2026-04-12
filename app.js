@@ -1,5 +1,49 @@
 
 // ============================================================
+// AUTH LOGIC
+// ============================================================
+const SITE_PASSWD = "patryk2026";
+
+function checkAuth() {
+  const isAuth = sessionStorage.getItem('portfolio_auth') === 'true';
+  const authScreen = document.getElementById('auth-screen');
+  const appContainer = document.querySelector('.app');
+
+  if (isAuth) {
+    if (authScreen) authScreen.classList.add('hidden');
+    if (appContainer) appContainer.classList.add('visible');
+  } else {
+    initAuthListeners();
+  }
+}
+
+function initAuthListeners() {
+  const input = document.getElementById('auth-input');
+  const btn = document.getElementById('auth-btn');
+  const error = document.getElementById('auth-error');
+
+  if (!input || !btn) return;
+
+  const tryUnlock = () => {
+    if (input.value === SITE_PASSWD) {
+      sessionStorage.setItem('portfolio_auth', 'true');
+      document.getElementById('auth-screen').classList.add('hidden');
+      document.querySelector('.app').classList.add('visible');
+    } else {
+      error.classList.add('show');
+      input.value = '';
+      input.focus();
+      setTimeout(() => error.classList.remove('show'), 3000);
+    }
+  };
+
+  btn.addEventListener('click', tryUnlock);
+  input.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') tryUnlock();
+  });
+}
+
+// ============================================================
 // I18N (TRANSLATIONS)
 // ============================================================
 const TRANSLATIONS = {
@@ -34,7 +78,12 @@ const TRANSLATIONS = {
     lang_pl: "Polski", lvl_native: "Ojczysty", lang_en: "Angielski", lang_de: "Niemiecki",
     contact_badge: "Dostępny do nowych projektów", contact_heading: "Masz projekt?<br><span class=\"hi-green\">Porozmawiajmy.</span>", contact_desc_2: "Chętnie poznam Twój pomysł i pomogę go zrealizować w najlepszy możliwy sposób. Odpowiadam w ciągu 24h.",
     contact_btn_main: "SKONTAKTUJ SIĘ ZE MNĄ", cv_desc: "Pobierz moje CV<br>w formacie PDF", cv_btn_dl: "POBIERZ CV",
-    menu_contact_sub: "Nawiąż współpracę"
+    menu_contact_sub: "Nawiąż współpracę",
+    auth_title: "Dostęp zastrzeżony",
+    auth_subtitle: "Ta strona jest chroniona hasłem. Wprowadź klucz dostępu, aby kontynuować.",
+    auth_placeholder: "Hasło...",
+    auth_btn: "WEJDŹ",
+    auth_error: "Błędne hasło. Spróbuj ponownie."
   },
   en: {
     menu_home: "HOME", menu_projects: "PROJECTS", menu_about: "ABOUT ME", menu_contact: "CONTACT", sidebar_sm: "FOLLOW MY SOCIALS:",
@@ -67,7 +116,12 @@ const TRANSLATIONS = {
     lang_pl: "Polish", lvl_native: "Native", lang_en: "English", lang_de: "German",
     contact_badge: "Available for new projects", contact_heading: "Have a project?<br><span class=\"hi-green\">Let's talk.</span>", contact_desc_2: "I'd love to hear about your idea and help bring it to life in the best way possible. I reply within 24h.",
     contact_btn_main: "CONTACT ME", cv_desc: "Download my CV<br>in PDF format", cv_btn_dl: "DOWNLOAD CV",
-    menu_contact_sub: "Start project"
+    menu_contact_sub: "Start project",
+    auth_title: "Restricted Access",
+    auth_subtitle: "This page is password protected. Please enter the access key to continue.",
+    auth_placeholder: "Password...",
+    auth_btn: "ENTER",
+    auth_error: "Incorrect password. Try again."
   },
   de: {
     menu_home: "STARTSEITE", menu_projects: "PROJEKTE", menu_about: "ÜBER MICH", menu_contact: "KONTAKT", sidebar_sm: "FOLGEN SIE MEINEN SM:",
@@ -100,7 +154,12 @@ const TRANSLATIONS = {
     lang_pl: "Polnisch", lvl_native: "Muttersprache", lang_en: "Englisch", lang_de: "Deutsch",
     contact_badge: "Verfügbar für neue Projekte", contact_heading: "Haben Sie ein Projekt?<br><span class=\"hi-green\">Lass uns reden.</span>", contact_desc_2: "Ich würde gerne von Ihrer Idee hören und helfen, sie auf die bestmögliche Weise umzusetzen. Ich antworte innerhalb von 24 Stunden.",
     contact_btn_main: "KONTAKTIERE MICH", cv_desc: "Lade meinen Lebenslauf<br>im PDF-Format herunter", cv_btn_dl: "LEBENSLAUF HERUNTERLADEN",
-    menu_contact_sub: "Zusammenarbeit"
+    menu_contact_sub: "Zusammenarbeit",
+    auth_title: "Eingeschränkter Zugriff",
+    auth_subtitle: "Diese Seite ist passwortgeschützt. Bitte geben Sie den Zugangsschlüssel ein, um fortzufahren.",
+    auth_placeholder: "Passwort...",
+    auth_btn: "EINTRETEN",
+    auth_error: "Falsches Passwort. Versuchen Sie es erneut."
   }
 };
 
@@ -121,6 +180,12 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-i18n-html]').forEach(el => {
     const key = el.getAttribute('data-i18n-html');
     if (TRANSLATIONS[lang][key]) el.innerHTML = TRANSLATIONS[lang][key];
+  });
+  
+  // Update Placeholders
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (TRANSLATIONS[lang][key]) el.placeholder = TRANSLATIONS[lang][key];
   });
   
   // Update document language
@@ -706,6 +771,7 @@ document.getElementById('main-content').addEventListener('click', () => {
 // INIT
 // ============================================================
 (function init() {
+  checkAuth();
   initI18n();
   renderFeaturedProjects();
   renderProjects('all'); // pre-render for first visit

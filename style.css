@@ -931,3 +931,67 @@ img { max-width: 100%; display: block; }
   .project-card.span-2 { grid-column: span 1; }
   .bio-card { flex-direction: column; }
 }
+/* ============================================================
+   AUTH SCREEN (GATEKEEPER)
+   ============================================================ */
+#auth-screen {
+  position: fixed; inset: 0; z-index: 99999;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity 0.6s var(--ease), visibility 0.6s var(--ease);
+}
+#auth-screen.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.auth-card {
+  width: 90%; max-width: 400px;
+  background: rgba(21, 21, 31, 0.4);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  animation: authFadeIn 0.8s var(--ease) both;
+}
+@keyframes authFadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.auth-logo { font-size: 1.2rem; font-weight: 800; letter-spacing: 3px; margin-bottom: 24px; }
+.auth-logo .logo-bracket { color: var(--green); }
+
+.auth-title { font-size: 1.1rem; color: var(--txt); margin-bottom: 8px; font-weight: 600; }
+.auth-subtitle { font-size: 0.9rem; color: var(--txt2); margin-bottom: 30px; line-height: 1.5; }
+
+.auth-input-group { position: relative; margin-bottom: 20px; }
+.auth-input {
+  width: 100%; padding: 14px 18px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 10px; color: var(--txt);
+  font-family: inherit; font-size: 1rem;
+  transition: var(--transition); text-align: center;
+  letter-spacing: 4px;
+}
+.auth-input:focus { outline: none; border-color: var(--green); background: rgba(57,255,20,0.02); }
+
+.auth-btn {
+  width: 100%; padding: 14px;
+  background: var(--green); color: #000;
+  border-radius: 10px; font-weight: 700;
+  font-size: 0.95rem; letter-spacing: 1px;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(57,255,20,0.2);
+}
+.auth-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(57,255,20,0.3); }
+.auth-btn:active { transform: translateY(0); }
+
+.auth-error {
+  color: #ff4d4d; font-size: 0.85rem; margin-top: 15px;
+  opacity: 0; transform: translateY(-5px); transition: var(--transition);
+}
+.auth-error.show { opacity: 1; transform: translateY(0); }
+
+.app { transition: opacity 0.8s var(--ease); opacity: 0; }
+.app.visible { opacity: 1; }

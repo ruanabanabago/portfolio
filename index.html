@@ -21,6 +21,26 @@
   <!-- Cyberpunk grid background -->
   <div class="bg-grid"></div>
 
+  <!-- Auth Screen -->
+  <div id="auth-screen">
+    <div class="auth-card">
+      <div class="auth-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">PATRYK SETLAK</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <h2 class="auth-title" data-i18n="auth_title">Dostęp zastrzeżony</h2>
+      <p class="auth-subtitle" data-i18n="auth_subtitle">Ta strona jest chroniona hasłem. Wprowadź klucz dostępu, aby kontynuować.</p>
+      
+      <div class="auth-input-group">
+        <input type="password" id="auth-input" class="auth-input" placeholder="••••" data-i18n-placeholder="auth_placeholder">
+        <div id="auth-error" class="auth-error" data-i18n="auth_error">Błędne hasło. Spróbuj ponownie.</div>
+      </div>
+      
+      <button id="auth-btn" class="auth-btn" data-i18n="auth_btn">WEJDŹ</button>
+    </div>
+  </div>
+
   <div class="app">
 
     <!-- ========== MOBILE HEADER ========== -->
