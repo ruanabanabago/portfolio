@@ -1,0 +1,567 @@
+// ============================================================
+// PROJECTS DATA
+// ============================================================
+const PROJECTS = [
+  // ANIMACJE
+  {"id":1,"category":"Animacje","title":"Animacja 1","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 1.mp4","accent":"#39FF14","span":"normal"},
+  {"id":2,"category":"Animacje","title":"Animacja 2","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 2.mp4","landscape":true,"accent":"#39FF14","span":"normal"},
+  {"id":3,"category":"Animacje","title":"Animacja 3","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 3.mp4","accent":"#39FF14","span":"normal"},
+  {"id":4,"category":"Animacje","title":"Animacja 4","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 4.mp4","landscape":true,"accent":"#39FF14","span":"normal"},
+  {"id":400,"category":"Animacje","title":"Animacja 5","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 5.mp4","accent":"#39FF14","span":"normal"},
+  {"id":401,"category":"Animacje","title":"Animacja 6","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 6.mp4","accent":"#39FF14","span":"normal"},
+  {"id":402,"category":"Animacje","title":"Animacja 7","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 7.mp4","accent":"#39FF14","span":"normal"},
+  {"id":403,"category":"Animacje","title":"Animacja 8","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 8.mp4","accent":"#39FF14","span":"normal"},
+  {"id":404,"category":"Animacje","title":"Animacja 9","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 9.mp4","landscape":true,"accent":"#39FF14","span":"normal"},
+  {"id":405,"category":"Animacje","title":"Animacja 10","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 10.mp4","landscape":true,"accent":"#39FF14","span":"normal"},
+
+
+  // ROLKI
+  {"id":8,"category":"Rolki","title":"Rolka 1","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 1.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":9,"category":"Rolki","title":"Rolka 2","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 2.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":300,"category":"Rolki","title":"Rolka 3","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 3.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":301,"category":"Rolki","title":"Rolka 4","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 4.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":302,"category":"Rolki","title":"Rolka 5","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 5.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":303,"category":"Rolki","title":"Rolka 6","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 6.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":304,"category":"Rolki","title":"Rolka 7","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 7.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":305,"category":"Rolki","title":"Rolka 8","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 8.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":306,"category":"Rolki","title":"Rolka 9","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 9.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":307,"category":"Rolki","title":"Rolka 10","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 10.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":308,"category":"Rolki","title":"Rolka 11","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 11.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":309,"category":"Rolki","title":"Rolka 12","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 12.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":310,"category":"Rolki","title":"Rolka 13","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 13.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":311,"category":"Rolki","title":"Rolka 14","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 14.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":312,"category":"Rolki","title":"Rolka 15","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 15.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":313,"category":"Rolki","title":"Rolka 16","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 16.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":314,"category":"Rolki","title":"Rolka 17","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 17.mp4","accent":"#BF5FFF","span":"normal"},
+
+  // PLAKATY
+  {"id":11,"category":"Plakaty","title":"Plakat 1","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 1.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":12,"category":"Plakaty","title":"Plakat 2","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 2.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":500,"category":"Plakaty","title":"Plakat 3","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 3.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":501,"category":"Plakaty","title":"Plakat 4","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 4.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":502,"category":"Plakaty","title":"Plakat 5","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 5.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":503,"category":"Plakaty","title":"Plakat 6","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 6.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":504,"category":"Plakaty","title":"Plakat 7","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 7.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":505,"category":"Plakaty","title":"Plakat 8","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 8.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":506,"category":"Plakaty","title":"Plakat 9","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 9.webp"],"span":"large","accent":"#FFA139"},
+  {"id":507,"category":"Plakaty","title":"Plakat 10","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 10.webp"],"span":"large","accent":"#FFA139"},
+  {"id":508,"category":"Plakaty","title":"Plakat 11","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 11.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":509,"category":"Plakaty","title":"Plakat 12","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 12.webp"],"span":"large","accent":"#FFA139"},
+  {"id":510,"category":"Plakaty","title":"Plakat 13","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 13.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":511,"category":"Plakaty","title":"Plakat 14","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 14.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":512,"category":"Plakaty","title":"Plakat 15","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 15.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":513,"category":"Plakaty","title":"Plakat 16","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 16.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":514,"category":"Plakaty","title":"Plakat 17","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 17.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":515,"category":"Plakaty","title":"Plakat 18","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 18.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":516,"category":"Plakaty","title":"Plakat 19","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 19.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":517,"category":"Plakaty","title":"Plakat 20","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 20.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":518,"category":"Plakaty","title":"Plakat 21","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 21.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":519,"category":"Plakaty","title":"Plakat 22","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 22.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":520,"category":"Plakaty","title":"Plakat 23","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 23.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":521,"category":"Plakaty","title":"Plakat 24","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 24.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":522,"category":"Plakaty","title":"Plakat 25","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 25.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":523,"category":"Plakaty","title":"Plakat 26","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 26.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":524,"category":"Plakaty","title":"Plakat 27","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 27.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":525,"category":"Plakaty","title":"Plakat 28","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 28.webp"],"span":"normal","accent":"#FFA139"},
+  {"id":526,"category":"Plakaty","title":"Plakat 29","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 29.webp"],"span":"normal","accent":"#FFA139"},
+
+  // DESIGN
+  {
+    id: 13, category: 'Design',
+    title: 'UI Dashboard',
+    desc: 'Projekt interfejsu dashboardu analitycznego dla startupu SaaS. Dark mode, data visualization, responsive. Projekt w Figma + prototyp.',
+    tags: ['Figma', 'UI/UX', 'Dashboard', 'Dark Mode'],
+    bg: 'linear-gradient(135deg, #050d18 0%, #0d1020 100%)',
+    accent: '#39AAFF', emoji: '💻', span: 'large'
+  },
+  {
+    id: 14, category: 'Design',
+    title: 'Brand Identity',
+    desc: 'Kompletna identyfikacja wizualna dla startupu tech. Logo, paleta kolorów, typografia, system ikon i brand guidelines 40+ stron.',
+    tags: ['Illustrator', 'Branding', 'Brand Identity'],
+    bg: 'linear-gradient(135deg, #140814 0%, #0a0614 100%)',
+    accent: '#BF5FFF', emoji: '✏️', span: 'normal'
+  },
+  {
+    id: 15, category: 'Design',
+    title: 'App UI Kit',
+    desc: 'Kompletny UI kit dla aplikacji mobilnej — 40+ komponentów, dark/light mode, 3 warianty kolorystyczne.',
+    tags: ['Figma', 'Mobile', 'UI Kit'],
+    bg: 'linear-gradient(135deg, #08100d 0%, #050d10 100%)',
+    accent: '#39FF14', emoji: '📐', span: 'normal'
+  },
+
+  // POZOSTAŁE
+  {"id":600,"category":"Pozostałe","title":"Kartka świąteczna dla klientów","desc":"Projekt w kategorii Pozostałe.","tags":["Design","Graphic Design"],"images":["img/projects/pozostale/Kartka świąteczna dla klientów.webp"],"span":"large","accent":"#FFDB39"},
+  {"id":601,"category":"Pozostałe","title":"Kartka świąteczna dla partnerów","desc":"Projekt w kategorii Pozostałe.","tags":["Design","Graphic Design"],"images":["img/projects/pozostale/Kartka świąteczna dla partnerów.webp"],"span":"large","accent":"#FFDB39"},
+  {"id":602,"category":"Pozostałe","title":"Okładka kalendarza","desc":"Projekt w kategorii Pozostałe.","tags":["Design","Graphic Design"],"images":["img/projects/pozostale/Okładka kalendarza.webp"],"span":"normal","accent":"#FFDB39"},
+  {"id":603,"category":"Pozostałe","title":"Projekty logo","desc":"Projekt w kategorii Pozostałe.","tags":["Design","Graphic Design"],"images":["img/projects/pozostale/Projekty logo.webp"],"span":"large","accent":"#FFDB39"},
+  {"id":604,"category":"Pozostałe","title":"Seqma brand hero do prezentacji","desc":"Projekt w kategorii Pozostałe.","tags":["Design","Graphic Design"],"images":["img/projects/pozostale/Seqma brand hero do prezentacji.webp"],"span":"large","accent":"#FFDB39"},
+  {"id":605,"category":"Pozostałe","title":"Urlop.pl projekty oraz wizualizacje merch","desc":"Projekt w kategorii Pozostałe.","tags":["Design","Graphic Design"],"images":["img/projects/pozostale/Urlop.pl projekty oraz wizualizacje merch.webp"],"span":"large","accent":"#FFDB39"},
+  // NOWE POSTY (Wygenerowane)
+  {"id":100,"category":"Posty","title":"Cover fb dla franczyz","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/cover fb dla franczyz.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":101,"category":"Posty","title":"Grafika informująca o dyżurach","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/grafika informująca o dyżurach.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":102,"category":"Posty","title":"Grafika na konkurs nekera","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/grafika na konkurs nekera.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":103,"category":"Posty","title":"Grafika na konkurs rainbow","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/grafika na konkurs rainbow.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":104,"category":"Posty","title":"Neocardiosim","desc":"Karuzela: Neocardiosim","tags":["Social Media","Design","Carousel"],"images":["img/projects/neocardiosim/Post Neocardiosim (1).webp","img/projects/neocardiosim/Post Neocardiosim (2).webp","img/projects/neocardiosim/Post Neocardiosim (3).webp","img/projects/neocardiosim/Post Neocardiosim (4).webp","img/projects/neocardiosim/Post Neocardiosim (5).webp","img/projects/neocardiosim/Post Neocardiosim (6).webp"],"span":"large","accent":"#39FF14"},
+  {"id":105,"category":"Posty","title":"Pora na pomidora post 2","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/pora na pomidora post 2.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":106,"category":"Posty","title":"Pora na pomidora post 3","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/Pora na pomidora post 3.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":107,"category":"Posty","title":"Pora na pomidora post","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/pora na pomidora post.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":108,"category":"Posty","title":"Post  WSPIA 2","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post  WSPIA 2.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":109,"category":"Posty","title":"Post citybreak","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post citybreak.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":110,"category":"Posty","title":"Post dzień kobiet","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post dzień kobiet.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":111,"category":"Posty","title":"Post Enfoglobe University Florida 2","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/Post Enfoglobe University Florida 2.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":112,"category":"Posty","title":"Post Enfoglobe University Florida","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/Post Enfoglobe University Florida.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":113,"category":"Posty","title":"Post floryhorse produkt 1","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post floryhorse produkt 1.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":114,"category":"Posty","title":"Post floryhorse produkt 2","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post floryhorse produkt 2.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":115,"category":"Posty","title":"Jakim urlopowiczem jesteś","desc":"Karuzela: Jakim urlopowiczem jesteś","tags":["Social Media","Design","Carousel"],"images":["img/projects/post karuzela jakim urlopowiczem jesteś/01.webp","img/projects/post karuzela jakim urlopowiczem jesteś/02.webp","img/projects/post karuzela jakim urlopowiczem jesteś/03.webp","img/projects/post karuzela jakim urlopowiczem jesteś/04.webp","img/projects/post karuzela jakim urlopowiczem jesteś/05.webp","img/projects/post karuzela jakim urlopowiczem jesteś/06.webp","img/projects/post karuzela jakim urlopowiczem jesteś/07.webp","img/projects/post karuzela jakim urlopowiczem jesteś/08.webp","img/projects/post karuzela jakim urlopowiczem jesteś/09.webp","img/projects/post karuzela jakim urlopowiczem jesteś/10.webp","img/projects/post karuzela jakim urlopowiczem jesteś/11.webp","img/projects/post karuzela jakim urlopowiczem jesteś/12.webp","img/projects/post karuzela jakim urlopowiczem jesteś/13.webp","img/projects/post karuzela jakim urlopowiczem jesteś/14.webp"],"span":"large","accent":"#39FF14"},
+  {"id":116,"category":"Posty","title":"Kierunki","desc":"Karuzela: Kierunki","tags":["Social Media","Design","Carousel"],"images":["img/projects/post karuzela kierunki/Egipt.webp","img/projects/post karuzela kierunki/Hiszpania.webp","img/projects/post karuzela kierunki/Paryż.webp","img/projects/post karuzela kierunki/Wenecja.webp","img/projects/post karuzela kierunki/Zanzibar.webp"],"span":"normal","accent":"#39FF14"},
+  {"id":117,"category":"Posty","title":"Wiza 0zł","desc":"Karuzela: Wiza 0zł","tags":["Social Media","Design","Carousel"],"images":["img/projects/post karuzela wiza 0zł/wiza 0 1.webp","img/projects/post karuzela wiza 0zł/wiza 0 2.webp","img/projects/post karuzela wiza 0zł/wiza 0 3.webp","img/projects/post karuzela wiza 0zł/wiza 0 4.webp","img/projects/post karuzela wiza 0zł/wiza 0 5.webp"],"span":"normal","accent":"#39FF14"},
+  {"id":118,"category":"Posty","title":"Post KNZiM","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/Post KNZiM.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":119,"category":"Posty","title":"Post luxdom 1","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post luxdom 1.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":120,"category":"Posty","title":"Post LuxDom 2","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/Post LuxDom 2.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":121,"category":"Posty","title":"Post LuxDom 3","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/Post LuxDom 3.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":122,"category":"Posty","title":"Post na kampanie walentynkową","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post na kampanie walentynkową.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":123,"category":"Posty","title":"Post na majówkowe last minute","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post na majówkowe last minute.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":124,"category":"Posty","title":"Post na piątek 13","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post na piątek 13.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":125,"category":"Posty","title":"Post na prima aprilis","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post na prima aprilis.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":126,"category":"Posty","title":"Post promocyjny dla franczyz wersja druga","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post promocyjny dla franczyz wersja druga.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":127,"category":"Posty","title":"Post promocyjny dla franczyz","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post promocyjny dla franczyz.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":128,"category":"Posty","title":"Post promujący walentynkowe last minute","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post promujący walentynkowe last minute.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":129,"category":"Posty","title":"Post przypominający o walentynkach","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post przypominający o walentynkach.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":130,"category":"Posty","title":"Post walentynkowy dłuższe wyjazdy","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post walentynkowy dłuższe wyjazdy.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":131,"category":"Posty","title":"Post walentynkowy zakochaj się w urlopie","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/post walentynkowy zakochaj się w urlopie.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":132,"category":"Posty","title":"ARC","desc":"Karuzela: ARC","tags":["Social Media","Design","Carousel"],"images":["img/projects/Posty ARC/post ARC (1).webp","img/projects/Posty ARC/post ARC (2).webp","img/projects/Posty ARC/post ARC (3).webp","img/projects/Posty ARC/post ARC (4).webp","img/projects/Posty ARC/post ARC (5).webp","img/projects/Posty ARC/post ARC (6).webp"],"span":"large","accent":"#39FF14"},
+  {"id":133,"category":"Posty","title":"Enfoglobe","desc":"Karuzela: Enfoglobe","tags":["Social Media","Design","Carousel"],"images":["img/projects/posty Enfoglobe/Post Enfoglobe (1).webp","img/projects/posty Enfoglobe/Post Enfoglobe (2).webp","img/projects/posty Enfoglobe/Post Enfoglobe (3).webp","img/projects/posty Enfoglobe/Post Enfoglobe (4).webp","img/projects/posty Enfoglobe/Post Enfoglobe (5).webp","img/projects/posty Enfoglobe/Post Enfoglobe (6).webp","img/projects/posty Enfoglobe/Post Enfoglobe (7).webp"],"span":"large","accent":"#39FF14"},
+  {"id":134,"category":"Posty","title":"Gocławia","desc":"Karuzela: Gocławia","tags":["Social Media","Design","Carousel"],"images":["img/projects/Posty Gocławia/Social media EDINVEST (1).webp","img/projects/Posty Gocławia/Social media EDINVEST (2).webp","img/projects/Posty Gocławia/Social media EDINVEST (3).webp","img/projects/Posty Gocławia/Social media EDINVEST (4).webp","img/projects/Posty Gocławia/Social media EDINVEST (5).webp","img/projects/Posty Gocławia/Social media EDINVEST (6).webp"],"span":"large","accent":"#39FF14"},
+  {"id":135,"category":"Posty","title":"Informed Consent","desc":"Karuzela: Informed Consent","tags":["Social Media","Design","Carousel"],"images":["img/projects/Posty Informed Consent/Post Informed Consent (1).webp","img/projects/Posty Informed Consent/Post Informed Consent (2).webp","img/projects/Posty Informed Consent/Post Informed Consent (3).webp","img/projects/Posty Informed Consent/Post Informed Consent (4).webp"],"span":"normal","accent":"#39FF14"},
+  {"id":136,"category":"Posty","title":"Interactive Care","desc":"Karuzela: Interactive Care","tags":["Social Media","Design","Carousel"],"images":["img/projects/Posty Interactive Care/Post interactive care (1).webp","img/projects/Posty Interactive Care/Post interactive care (2).webp","img/projects/Posty Interactive Care/Post interactive care (3).webp"],"span":"normal","accent":"#39FF14"},
+  {"id":137,"category":"Posty","title":"LOCCO","desc":"Karuzela: LOCCO","tags":["Social Media","Design","Carousel"],"images":["img/projects/posty LOCCO/1.webp","img/projects/posty LOCCO/2.webp","img/projects/posty LOCCO/3.webp","img/projects/posty LOCCO/4.webp","img/projects/posty LOCCO/5.webp","img/projects/posty LOCCO/6.webp"],"span":"large","accent":"#39FF14"},
+  {"id":138,"category":"Posty","title":"Rainbow 1 (1)","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/rainbow 1 (1).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":139,"category":"Posty","title":"Rainbow 1","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/rainbow 1.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":140,"category":"Posty","title":"Rainbow 2","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/rainbow 2.webp"],"span":"normal","accent":"#39AAFF"},
+  // POSTY URLOP.PL
+  {"id":200,"category":"Posty","title":"Post urlop.pl (1)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (1).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":201,"category":"Posty","title":"Post urlop.pl (2)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (2).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":202,"category":"Posty","title":"Post urlop.pl (3)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (3).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":203,"category":"Posty","title":"Post urlop.pl (4)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (4).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":204,"category":"Posty","title":"Post urlop.pl (5)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (5).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":205,"category":"Posty","title":"Post urlop.pl (6)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (6).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":206,"category":"Posty","title":"Post urlop.pl (7)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (7).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":207,"category":"Posty","title":"Post urlop.pl (8)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (8).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":208,"category":"Posty","title":"Post urlop.pl (9)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (9).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":209,"category":"Posty","title":"Post urlop.pl (10)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (10).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":210,"category":"Posty","title":"Post urlop.pl (11)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (11).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":211,"category":"Posty","title":"Post urlop.pl (12)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (12).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":212,"category":"Posty","title":"Post urlop.pl (13)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (13).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":213,"category":"Posty","title":"Post urlop.pl (14)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (14).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":214,"category":"Posty","title":"Post urlop.pl (15)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (15).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":215,"category":"Posty","title":"Post urlop.pl (16)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (16).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":216,"category":"Posty","title":"Post urlop.pl (17)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (17).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":217,"category":"Posty","title":"Post urlop.pl (18)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (18).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":218,"category":"Posty","title":"Post urlop.pl (19)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (19).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":219,"category":"Posty","title":"Post urlop.pl (20)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (20).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":220,"category":"Posty","title":"Post urlop.pl (21)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (21).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":221,"category":"Posty","title":"Post urlop.pl (22)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (22).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":222,"category":"Posty","title":"Post urlop.pl (23)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (23).webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":223,"category":"Posty","title":"Post urlop.pl (24)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (24).webp"],"span":"normal","accent":"#39AAFF"}
+];
+
+// ============================================================
+// ROUTER
+// ============================================================
+function navigate(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+
+  const pg  = document.getElementById(`page-${page}`);
+  const nav = document.getElementById(`nav-${page}`);
+  if (pg)  pg.classList.add('active');
+  if (nav) nav.classList.add('active');
+
+  window.location.hash = page;
+  document.getElementById('main-content').scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Page enter effects
+  if (page === 'home')     setTimeout(animateStats, 120);
+  if (page === 'about')    setTimeout(initSkillBars, 120);
+  if (page === 'projects') setTimeout(() => renderProjects('all'), 50);
+
+  document.getElementById('sidebar').classList.remove('open');
+}
+
+function navigateToCategory(cat) {
+  navigate('projects');
+  setTimeout(() => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.filter === cat));
+    renderProjects(cat);
+  }, 100);
+}
+
+// Nav clicks
+document.querySelectorAll('.nav-item').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    navigate(link.dataset.page);
+  });
+});
+
+// Filter clicks
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderProjects(btn.dataset.filter);
+  });
+});
+
+// ============================================================
+// CURSOR GLOW
+// ============================================================
+const cursorEl = document.getElementById('cursor-glow');
+let mouseX = 0, mouseY = 0;
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX; mouseY = e.clientY;
+  cursorEl.style.left = mouseX + 'px';
+  cursorEl.style.top  = mouseY + 'px';
+});
+
+// ============================================================
+// STATS COUNTER ANIMATION
+// ============================================================
+let statsAnimated = false;
+function animateStats() {
+  const nums = document.querySelectorAll('.stat-num[data-target]');
+  if (!nums.length) return;
+  nums.forEach(el => {
+    const target = parseInt(el.dataset.target, 10);
+    const suffix = el.dataset.suffix || '';
+    const dur = 1600;
+    const fps = 60;
+    const steps = dur / (1000 / fps);
+    const inc = target / steps;
+    let cur = 0;
+    const tick = () => {
+      cur = Math.min(cur + inc, target);
+      el.textContent = Math.floor(cur) + suffix;
+      if (cur < target) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  });
+  
+  if(!statsAnimated) {
+    statsAnimated = true;
+    initClientsCarousel();
+  }
+}
+
+// CLIENTS CAROUSEL (Mini)
+const CLIENTS_LIST = [
+  "Seqma", "Enfoglobe", "Urlop.pl", "Vision4U", "Drukarnia Jasło", "MGM Reklamy", 
+  "APS Data", "GreeMi", "Dolina trzech stawów", "Informed Consent", "OSCA Courts", "Ranczo Rumak"
+];
+let currentClientIdx = 0;
+let clientInterval = null;
+
+function initClientsCarousel() {
+  const textEl = document.getElementById('clients-carousel-text');
+  const dotsWrap = document.getElementById('clients-dots');
+  if(!textEl || !dotsWrap) return;
+  
+  dotsWrap.innerHTML = CLIENTS_LIST.map((_, i) => `<span class="dot ${i===0?'active':''}" onclick="setClient(${i})"></span>`).join('');
+  textEl.textContent = CLIENTS_LIST[0];
+  
+  if(clientInterval) clearInterval(clientInterval);
+  clientInterval = setInterval(() => {
+    setClient((currentClientIdx + 1) % CLIENTS_LIST.length);
+  }, 3000);
+}
+
+window.setClient = function(idx) {
+  currentClientIdx = idx;
+  const textEl = document.getElementById('clients-carousel-text');
+  const dotsWrap = document.getElementById('clients-dots');
+  if(!textEl || !dotsWrap) return;
+  
+  textEl.style.opacity = 0;
+  setTimeout(() => {
+    textEl.textContent = CLIENTS_LIST[idx];
+    textEl.style.opacity = 1;
+  }, 200);
+
+  Array.from(dotsWrap.children).forEach((d, i) => d.classList.toggle('active', i === idx));
+  
+  // reset interval on manual click
+  if(clientInterval) clearInterval(clientInterval);
+  clientInterval = setInterval(() => {
+    setClient((currentClientIdx + 1) % CLIENTS_LIST.length);
+  }, 3000);
+};
+
+// ============================================================
+// FEATURED PROJECTS (HOME)
+// ============================================================
+function renderFeaturedProjects() {
+  const grid = document.getElementById('featured-grid');
+  if (!grid) return;
+  const targetTitles = [
+    "Plakat 5",
+    "Animacja 8",
+    "Plakat 11",
+    "Post Enfoglobe University Florida",
+    "Plakat 14"
+  ];
+  const featured = targetTitles.map(t => PROJECTS.find(p => p.title === t)).filter(Boolean);
+  grid.innerHTML = featured.map(p => projectCardHTML(p, false)).join('');
+}
+
+// ============================================================
+// PROJECT CARD HTML BUILDER
+// ============================================================
+function projectCardHTML(p, bento = true) {
+  // span-2 tylko dla Plakatów i Pozostałe poziomych
+  const extraClass = ((p.category === 'Plakaty' || p.category === 'Pozostałe') && p.span === 'large') ? 'span-2' : '';
+  const hasImages = p.images && p.images.length > 0;
+  const isCarousel = p.images && p.images.length > 1;
+  
+  const bgStyle = hasImages 
+    ? `background-image: url('${p.images[0]}'); background-size: cover; background-position: center;`
+    : `background:${p.bg}`;
+    
+  const emojiHtml = hasImages ? '' : `<span class="proj-thumb-emoji">${p.emoji}</span>`;
+  
+  const hasVideo = !!p.video;
+  
+  const carouselIcon = isCarousel 
+    ? `<div style="position:absolute; top:12px; right:12px; background:rgba(0,0,0,0.6); backdrop-filter:blur(4px); padding:6px; border-radius:6px; color:white; display:flex; align-items:center; justify-content:center;">
+         <svg viewBox="0 0 24 24" fill="currentColor" stroke-width="2" style="width:16px; height:16px;">
+           <path d="M4 4h12v12H4V4zm14 2h2v14H6v-2h10V6z"/>
+         </svg>
+       </div>`
+    : '';
+  
+  const videoIcon = hasVideo
+    ? `<div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.55); backdrop-filter:blur(6px); width:52px; height:52px; border-radius:50%; display:flex; align-items:center; justify-content:center; border:2px solid rgba(191,95,255,.5);">
+         <svg viewBox="0 0 24 24" fill="#BF5FFF" style="width:24px; height:24px; margin-left:3px;"><path d="M8 5v14l11-7z"/></svg>
+       </div>`
+    : '';
+
+  return `
+    <div class="project-card ${extraClass}" onclick="openModal(${p.id})">
+      <div class="proj-thumb" style="${bgStyle}">
+        ${emojiHtml}
+        ${hasVideo ? `<video src="${p.video}" muted preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>` : ''}
+      </div>
+      ${carouselIcon}
+      ${videoIcon}
+      <div class="proj-overlay">
+        <span class="proj-cat-tag" style="color:${p.accent}">${p.category}</span>
+        <h3 class="proj-title">${p.title}</h3>
+      </div>
+      <div class="proj-expand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+        </svg>
+      </div>
+    </div>
+  `;
+}
+
+// ============================================================
+// PROJECTS BENTO RENDER
+// ============================================================
+function renderProjects(filter) {
+  const grid = document.getElementById('projects-bento');
+  if (!grid) return;
+  let list = (filter === 'all' ? PROJECTS.filter(p => p && p.category !== 'Design') : PROJECTS.filter(p => p && p.category === filter)).filter(Boolean);
+
+  if (filter === 'all') {
+    // Równomierne mieszanie kategorii (interleaving), aby uniknąć grupowania ciężkich plików
+    const groups = {};
+    list.forEach(p => {
+      if (!groups[p.category]) groups[p.category] = [];
+      groups[p.category].push(p);
+    });
+    const mixed = [];
+    let added = true;
+    while (added) {
+      added = false;
+      for (const cat in groups) {
+        if (groups[cat].length > 0) {
+          mixed.push(groups[cat].shift());
+          added = true;
+        }
+      }
+    }
+    list = mixed;
+  }
+
+  // For Posty: carousels first, Neocardiosim + Enfoglobe FL2 last
+  if (filter === 'Posty') {
+    const LAST_IDS = [104, 111]; // Neocardiosim, Post Enfoglobe University Florida 2
+    const lastItems = list.filter(p => LAST_IDS.includes(p.id));
+    list = list.filter(p => !LAST_IDS.includes(p.id));
+    list.sort((a, b) => {
+      const aCarousel = a.images && a.images.length > 1 ? 1 : 0;
+      const bCarousel = b.images && b.images.length > 1 ? 1 : 0;
+      return bCarousel - aCarousel;
+    });
+    list = [...list, ...lastItems];
+  }
+
+  if (filter === 'Design') {
+    grid.style.display = 'flex';
+    grid.style.flexDirection = 'column';
+    grid.style.gap = '30px';
+    const figmaBase = 'https://www.figma.com/embed?embed_host=share&url=';
+    const proto1 = encodeURIComponent('https://www.figma.com/proto/rHPTv0o0VyAr3Sb5Bcnj3A/TfT-Client?node-id=1-2&starting-point-node-id=1%3A2&t=CHYZvhmiYZV6GJJD-1');
+    const proto2 = encodeURIComponent('https://www.figma.com/proto/045zTkSWbHV6AmKKf1Iden/Metin-2-client?node-id=40-490&starting-point-node-id=40%3A490&t=LQ6gCT4KFZOVryBS-1');
+    grid.innerHTML = `
+      <div style="width:100%; height:80vh; border-radius:16px; overflow:hidden; border:1px solid var(--border); box-shadow:0 0 40px rgba(57,255,20,0.08);">
+        <iframe style="border:none;" width="100%" height="100%" src="${figmaBase}${proto1}" allowfullscreen></iframe>
+      </div>
+      <div style="width:100%; height:80vh; border-radius:16px; overflow:hidden; border:1px solid var(--border); box-shadow:0 0 40px rgba(255,57,180,0.08);">
+        <iframe style="border:none;" width="100%" height="100%" src="${figmaBase}${proto2}" allowfullscreen></iframe>
+      </div>
+    `;
+    return;
+  }
+  
+  grid.style.display = ''; // zresetuj style
+  grid.style.flexDirection = '';
+  grid.style.gap = '';
+
+  grid.innerHTML = list.map(p => projectCardHTML(p, true)).join('');
+}
+
+// ============================================================
+// MODAL & CAROUSEL
+// ============================================================
+let currentCarouselIndex = 0;
+let currentProject = null;
+
+function openModal(id) {
+  // Upewniamy się, że omijamy puste pola (sparse arrays) wykluczając undefined w find()
+  const p = PROJECTS.find(x => x && x.id === id);
+  if (!p) return;
+  currentProject = p;
+  currentCarouselIndex = 0;
+
+  document.getElementById('modal-cat').textContent   = p.category;
+  document.getElementById('modal-title').textContent = p.title;
+  document.getElementById('modal-desc').textContent  = p.desc || '';
+
+  const imgEl = document.getElementById('modal-img');
+  imgEl.style.background = p.bg || 'var(--bg)';
+  
+  const modalEl = document.querySelector('.project-modal');
+  
+  if (p.video) {
+    if (p.landscape) {
+      modalEl.classList.remove('video-modal');
+      modalEl.classList.add('landscape-modal');
+    } else {
+      modalEl.classList.remove('landscape-modal');
+      modalEl.classList.add('video-modal');
+    }
+    imgEl.style.background = '#000';
+    imgEl.innerHTML = `
+      <video src="${p.video}" controls autoplay muted loop
+        style="border-radius:20px 20px 0 0;"
+        playsinline>
+      </video>`;
+  } else {
+    modalEl.classList.remove('video-modal', 'landscape-modal');
+    if (p.images && p.images.length > 1) {
+      updateCarouselMarkup();
+    } else if (p.images && p.images.length === 1) {
+      imgEl.innerHTML = `<img src="${p.images[0]}" />`;
+    } else if (p.emoji) {
+      imgEl.innerHTML = `<span style="font-size:100px;opacity:.08;user-select:none">${p.emoji}</span>`;
+    } else {
+      imgEl.innerHTML = '';
+    }
+  }
+
+  document.getElementById('modal-tags').innerHTML =
+    (p.tags || []).map(t => `<span class="modal-tag">${t}</span>`).join('');
+
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function updateCarouselMarkup() {
+  const imgEl = document.getElementById('modal-img');
+  const images = currentProject.images;
+  
+  let indicators = '';
+  for(let i=0; i<images.length; i++) {
+    indicators += `<span class="carousel-dot ${i === currentCarouselIndex ? 'active' : ''}" onclick="goToCarouselImage(event, ${i})"></span>`;
+  }
+  
+  imgEl.innerHTML = `
+    <div class="carousel-wrap" style="position:relative; width:100%; height:100%; display:flex; align-items:center; justify-content:center;">
+      <img src="${images[currentCarouselIndex]}" style="max-width:100%; max-height:100%; object-fit:contain; border-radius:12px;" />
+      <button class="carousel-btn prev" onclick="changeCarousel(-1, event)">&#10094;</button>
+      <button class="carousel-btn next" onclick="changeCarousel(1, event)">&#10095;</button>
+      <div class="carousel-indicators-wrap">${indicators}</div>
+    </div>
+  `;
+}
+
+function changeCarousel(dir, e) {
+  if (e) e.stopPropagation();
+  const len = currentProject.images.length;
+  currentCarouselIndex = (currentCarouselIndex + dir + len) % len;
+  updateCarouselMarkup();
+}
+
+function goToCarouselImage(e, index) {
+  if (e) e.stopPropagation();
+  currentCarouselIndex = index;
+  updateCarouselMarkup();
+}
+
+function closeModal() {
+  // Stop any playing video
+  const vid = document.querySelector('#modal-img video');
+  if (vid) { vid.pause(); vid.src = ''; }
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ============================================================
+// SKILL BARS ANIMATION
+// ============================================================
+let skillsAnimated = false;
+function initSkillBars() {
+  document.querySelectorAll('.skill-fill').forEach(bar => {
+    bar.style.width = '0%';
+    setTimeout(() => { bar.style.width = bar.dataset.w + '%'; }, 80);
+  });
+}
+
+// ============================================================
+// MOBILE SIDEBAR
+// ============================================================
+document.getElementById('sidebar-toggle').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.toggle('open');
+});
+
+// Close sidebar on outside click (mobile)
+document.getElementById('main-content').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.remove('open');
+});
+
+// ============================================================
+// INIT
+// ============================================================
+(function init() {
+  renderFeaturedProjects();
+  renderProjects('all'); // pre-render for first visit
+
+  const hash = window.location.hash.replace('#', '') || 'home';
+  navigate(hash);
+})();
