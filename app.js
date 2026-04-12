@@ -21,7 +21,20 @@ const TRANSLATIONS = {
     tools_label: "NARZĘDZIA & TECHNOLOGIE", edu_label: "CERTYFIKATY & EDUKACJA",
     page_contact_title: "BĄDŹMY W KONTAKCIE", page_contact_subtitle: "Zawsze otwarty na nowe projekty, jeśli masz coś niesamowitego! 💪",
     cta_title: "Masz projekt do zrealizowania?", cta_desc: "Wyślij do mnie szczegóły na maila, odezwę się jak najszybciej to możliwe z moją propozycją!",
-    btn_copy: "Skopiuj Email", btn_mail: "Otwórz Pocztę"
+    btn_copy: "Skopiuj Email", btn_mail: "Otwórz Pocztę",
+    
+    // NEW ONES
+    cat_title_anim: "Animacje", cat_title_post: "Posty", cat_title_reel: "Rolki", cat_title_poster: "Plakaty", cat_title_design: "Design", cat_title_other: "Pozostałe",
+    filter_anim: "ANIMACJE", filter_post: "POSTY", filter_reel: "ROLKI", filter_poster: "PLAKATY", filter_design: "DESIGN", filter_other: "POZOSTAŁE",
+    cert_label: "CERTYFIKATY", exp_title: "DOŚWIADCZENIE", skills_label: "UMIEJĘTNOŚCI", edu_title2: "WYKSZTAŁCENIE", lang_label: "JĘZYKI",
+    date_present_25: "2025 — Obecnie", date_present_21: "2021 — Obecnie", month_feb: "Luty 2026", month_mar: "Marzec 2026", month_jun: "Czerwiec 2022",
+    job_title_1: "Projektant graficzny", job_desc_1: "Urlop.pl · Warszawa (Pełny etat)",
+    job_title_2: "Grafik freelancer", job_desc_2: "Praca zdalna / Freelance · Tworzenie identyfikacji wizualnej i materiałów reklamowych.",
+    job_title_3: "Grafik komputerowy", job_desc_3: "Enfoglobe LLC · Rzeszów (Hybrydowo)",
+    job_title_4: "Projektant graficzny (Staż)", edu_1_title: "Grafika Komputerowa", edu_1_desc: "2017 — 2020 · Licencjat",
+    lang_pl: "Polski", lvl_native: "Ojczysty", lang_en: "Angielski", lang_de: "Niemiecki",
+    contact_badge: "Dostępny do nowych projektów", contact_heading: "Masz projekt?<br><span class=\"hi-green\">Porozmawiajmy.</span>", contact_desc_2: "Chętnie poznam Twój pomysł i pomogę go zrealizować w najlepszy możliwy sposób. Odpowiadam w ciągu 24h.",
+    contact_btn_main: "SKONTAKTUJ SIĘ ZE MNĄ", cv_desc: "Pobierz moje CV<br>w formacie PDF", cv_btn_dl: "POBIERZ CV"
   },
   en: {
     menu_home: "HOME", menu_projects: "PROJECTS", menu_about: "ABOUT ME", menu_contact: "CONTACT", sidebar_sm: "FOLLOW MY SOCIALS:",
@@ -36,12 +49,25 @@ const TRANSLATIONS = {
     page_about_title: "ABOUT ME", page_about_subtitle: "Who I am and what I do", bio_role: "Graphic Designer & Freelancer",
     bio_text: "I am a creative graphic designer with freelance and agency experience. I create comprehensive projects, visual identities, and social media content. I continuously expand my skills by participating in training and earning Google and Adobe certifications.",
     hobby_label: "INTERESTS", hobby_1: "🎬 Classic action movies", hobby_2: "🎸 Music and playing bass", hobby_3: "🎮 Video games", hobby_4: "💻 Vibe Coding", hobby_5: "🖌️ Animation",
-    exp_label: "RECENT COLLABORATIONS", exp_1: "Video editing for YouTube channels and social media.", exp_2: "Along with the team, I designed health management platforms, VR courses, and presentations for American universities.", exp_3: "Ad editing, ad clothing visualization design, website creation, catalogs for a travel agency.",
+    exp_label: "RECENT WORK", exp_1: "Video editing for YouTube channels and social media.", exp_2: "Designed health management platforms, VR courses, and presentations for American universities.", exp_3: "Ad editing, ad clothing visualization design, website creation, catalogs for a travel agency.",
     target_label: "MY GOALS", target_1: "Continuous development and implementation of modern UI/UX solutions.", target_2: "Creating innovative campaigns that tell unique stories.", target_3: "Working on unique and unconventional branding projects.",
     tools_label: "TOOLS & TECHNOLOGIES", edu_label: "CERTIFICATIONS & EDUCATION",
     page_contact_title: "LET'S STAY IN TOUCH", page_contact_subtitle: "Always open to new projects if you have something amazing! 💪",
     cta_title: "Have a project in mind?", cta_desc: "Send me the details via email, and I will get back to you as soon as possible with my proposal!",
-    btn_copy: "Copy Email", btn_mail: "Open Mail"
+    btn_copy: "Copy Email", btn_mail: "Open Mail",
+    
+    // NEW ONES
+    cat_title_anim: "Animations", cat_title_post: "Posts", cat_title_reel: "Reels", cat_title_poster: "Posters", cat_title_design: "Design", cat_title_other: "Other",
+    filter_anim: "ANIMATIONS", filter_post: "POSTS", filter_reel: "REELS", filter_poster: "POSTERS", filter_design: "DESIGN", filter_other: "OTHER",
+    cert_label: "CERTIFICATIONS", exp_title: "EXPERIENCE", skills_label: "SKILLS", edu_title2: "EDUCATION", lang_label: "LANGUAGES",
+    date_present_25: "2025 — Present", date_present_21: "2021 — Present", month_feb: "February 2026", month_mar: "March 2026", month_jun: "June 2022",
+    job_title_1: "Graphic Designer", job_desc_1: "Urlop.pl · Warsaw (Full-time)",
+    job_title_2: "Freelance Graphic Designer", job_desc_2: "Remote / Freelance · Visual identity and advertising materials creation.",
+    job_title_3: "Computer Graphic Designer", job_desc_3: "Enfoglobe LLC · Rzeszów (Hybrid)",
+    job_title_4: "Graphic Designer (Intern)", edu_1_title: "Computer Graphics", edu_1_desc: "2017 — 2020 · Bachelor degree",
+    lang_pl: "Polish", lvl_native: "Native", lang_en: "English", lang_de: "German",
+    contact_badge: "Available for new projects", contact_heading: "Have a project?<br><span class=\"hi-green\">Let's talk.</span>", contact_desc_2: "I'd love to hear about your idea and help bring it to life in the best way possible. I reply within 24h.",
+    contact_btn_main: "CONTACT ME", cv_desc: "Download my CV<br>in PDF format", cv_btn_dl: "DOWNLOAD CV"
   },
   de: {
     menu_home: "STARTSEITE", menu_projects: "PROJEKTE", menu_about: "ÜBER MICH", menu_contact: "KONTAKT", sidebar_sm: "FOLGEN SIE MEINEN SM:",
@@ -61,8 +87,23 @@ const TRANSLATIONS = {
     tools_label: "WERKZEUGE & TECHNOLOGIEN", edu_label: "ZERTIFIKATE & AUSBILDUNG",
     page_contact_title: "LASS UNS IN KONTAKT BLEIBEN", page_contact_subtitle: "Immer offen für neue Projekte, wenn Sie etwas Großartiges haben! 💪",
     cta_title: "Haben Sie ein Projekt im Kopf?", cta_desc: "Senden Sie mir die Details per E-Mail, ich werde mich so schnell wie möglich mit meinem Vorschlag bei Ihnen melden!",
-    btn_copy: "E-Mail kopieren", btn_mail: "Mail öffnen"
+    btn_copy: "E-Mail kopieren", btn_mail: "Mail öffnen",
+    
+    // NEW ONES
+    cat_title_anim: "Animationen", cat_title_post: "Beiträge", cat_title_reel: "Reels", cat_title_poster: "Plakate", cat_title_design: "Design", cat_title_other: "Andere",
+    filter_anim: "ANIMATIONEN", filter_post: "BEITRÄGE", filter_reel: "REELS", filter_poster: "PLAKATE", filter_design: "DESIGN", filter_other: "ANDERE",
+    cert_label: "ZERTIFIKATE", exp_title: "ERFAHRUNG", skills_label: "FÄHIGKEITEN", edu_title2: "AUSBILDUNG", lang_label: "SPRACHEN",
+    date_present_25: "2025 — Heute", date_present_21: "2021 — Heute", month_feb: "Februar 2026", month_mar: "März 2026", month_jun: "Juni 2022",
+    job_title_1: "Grafikdesigner", job_desc_1: "Urlop.pl · Warschau (Vollzeit)",
+    job_title_2: "Freelance Grafikdesigner", job_desc_2: "Fernarbeit / Freelance · Erstellung von visuellen Identitäten und Werbematerialien.",
+    job_title_3: "Computergrafiker", job_desc_3: "Enfoglobe LLC · Rzeszów (Hybrid)",
+    job_title_4: "Grafikdesigner (Praktikum)", edu_1_title: "Computergrafik", edu_1_desc: "2017 — 2020 · Bachelor",
+    lang_pl: "Polnisch", lvl_native: "Muttersprache", lang_en: "Englisch", lang_de: "Deutsch",
+    contact_badge: "Verfügbar für neue Projekte", contact_heading: "Haben Sie ein Projekt?<br><span class=\"hi-green\">Lass uns reden.</span>", contact_desc_2: "Ich würde gerne von Ihrer Idee hören und helfen, sie auf die bestmögliche Weise umzusetzen. Ich antworte innerhalb von 24 Stunden.",
+    contact_btn_main: "KONTAKTIERE MICH", cv_desc: "Lade meinen Lebenslauf<br>im PDF-Format herunter", cv_btn_dl: "LEBENSLAUF HERUNTERLADEN"
   }
+};
+
 };
 
 let currentLang = localStorage.getItem('portfolio_lang') || 'pl';
