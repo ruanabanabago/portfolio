@@ -105,7 +105,16 @@ const TRANSLATIONS = {
     cv_job3_title: "Grafik Komputerowy", cv_hybrid: "· Hybrydowo",
     cv_job3_b1: "Projektowanie platform do zarządzania zdrowiem i kursów VR dla rynku amerykańskiego", cv_job3_b2: "Tworzenie prezentacji i materiałów marketingowych dla uniwersytetów w USA", cv_job3_b3: "Praca w środowisku międzynarodowym w języku angielskim",
     cv_job4_title: "Projektant Graficzny (Staż)",
-    cv_job4_b1: "Montaż reklam i wizualizacje odzieży reklamowej", cv_job4_b2: "Tworzenie witryn i katalogów dla biura podróży"
+    cv_job4_b1: "Montaż reklam i wizualizacje odzieży reklamowej", cv_job4_b2: "Tworzenie witryn i katalogów dla biura podróży",
+    cv_job5_title: "Praktyki zawodowe", cv_job5_comp: "APSdata", cv_job5_date: "2015", cv_job5_b1: "Realizacja zleceń w firmie (ulotki, wizytówki, plakaty)",
+    cv_job6_comp: "Drukarnia Jasło", cv_job6_date: "2014", cv_job6_b1: "Przygotowywanie grafik do procesu drukowania", cv_job6_b2: "Obsługa maszyn drukujących",
+    cv_job7_comp: "MGM Reklamy", cv_job7_date: "2013", cv_job7_b1: "Projektowanie grafik reklamowych oraz przygotowanie do druku", cv_job7_b2: "Obsługa plotera tnącego i oklejanie banerów",
+    cv_edu2_title: "Technik cyfrowych procesów graficznych", cv_edu2_school: "Technikum nr 4 w Jaśle",
+    cv_cert_a54: "Kwalifikacja A54 Przygotowanie mat. graficznych do druku",
+    cv_cert_a55: "Kwalifikacja A55 Drukowanie cyfrowe",
+    cv_cert_a25: "Kwalifikacja A25 Projektowanie multimedialne",
+    cv_cert_social: "The Social Media Marketing Masterclass 2024",
+    cv_cert_masterclass: "Graphic Design Masterclass Intermediate"
   },
   en: {
     menu_home: "HOME", menu_projects: "PROJECTS", menu_about: "ABOUT ME", menu_contact: "CONTACT", sidebar_sm: "FOLLOW MY SOCIALS:",
@@ -155,7 +164,16 @@ const TRANSLATIONS = {
     cv_job3_title: "Computer Graphic Designer", cv_hybrid: "· Hybrid",
     cv_job3_b1: "Designing health management platforms and VR courses for the US market", cv_job3_b2: "Creating presentations and marketing materials for US universities", cv_job3_b3: "Working in an international environment in English",
     cv_job4_title: "Graphic Designer (Intern)",
-    cv_job4_b1: "Editing advertisements and visualizing promotional clothing", cv_job4_b2: "Creating websites and catalogs for a travel agency"
+    cv_job4_b1: "Editing advertisements and visualizing promotional clothing", cv_job4_b2: "Creating websites and catalogs for a travel agency",
+    cv_job5_title: "Vocational Internship", cv_job5_comp: "APSdata", cv_job5_date: "2015", cv_job5_b1: "Order fulfillment (flyers, business cards, posters)",
+    cv_job6_comp: "Jasło Printing House", cv_job6_date: "2014", cv_job6_b1: "Preparing graphics for the printing process", cv_job6_b2: "Operating printing machines",
+    cv_job7_comp: "MGM Advertising", cv_job7_date: "2013", cv_job7_b1: "Designing ad graphics and pre-press preparation", cv_job7_b2: "Operating cutting plotters and banner wrapping",
+    cv_edu2_title: "Digital Graphic Processes Technician", cv_edu2_school: "Technical School No. 4 in Jasło",
+    cv_cert_a54: "A54 Qualification: Pre-press graphics preparation",
+    cv_cert_a55: "A55 Qualification: Digital printing",
+    cv_cert_a25: "A25 Qualification: Multimedia projects realization",
+    cv_cert_social: "The Social Media Marketing Masterclass 2024",
+    cv_cert_masterclass: "Graphic Design Masterclass Intermediate"
   },
   de: {
     menu_home: "STARTSEITE", menu_projects: "PROJEKTE", menu_about: "ÜBER MICH", menu_contact: "KONTAKT", sidebar_sm: "FOLGEN SIE MEINEN SM:",
@@ -205,7 +223,16 @@ const TRANSLATIONS = {
     cv_job3_title: "Computergrafikdesigner", cv_hybrid: "· Hybrid",
     cv_job3_b1: "Gestaltung von Gesundheitsmanagement-Plattformen und VR-Kursen für den US-Markt", cv_job3_b2: "Erstellung von Präsentationen und Marketingmaterialien für US-Universitäten", cv_job3_b3: "Arbeiten in einem internationalen Umfeld auf Englisch",
     cv_job4_title: "Grafikdesigner (Praktikant)",
-    cv_job4_b1: "Bearbeitung von Werbung und Visualisierung von Werbebekleidung", cv_job4_b2: "Erstellung von Websites und Katalogen für ein Reisebüro"
+    cv_job4_b1: "Bearbeitung von Werbung und Visualisierung von Werbebekleidung", cv_job4_b2: "Erstellung von Websites und Katalogen für ein Reisebüro",
+    cv_job5_title: "Berufspraktikum", cv_job5_comp: "APSdata", cv_job5_date: "2015", cv_job5_b1: "Auftragsabwicklung (Flyer, Visitenkarten, Plakate)",
+    cv_job6_comp: "Druckerei Jasło", cv_job6_date: "2014", cv_job6_b1: "Druckvorstufe von Grafiken", cv_job6_b2: "Bedienung von Druckmaschinen",
+    cv_job7_comp: "MGM Werbung", cv_job7_date: "2013", cv_job7_b1: "Entwurf von Werbegrafiken und Druckvorbereitung", cv_job7_b2: "Bedienung von Schneideplottern und Bannerbeklebung",
+    cv_edu2_title: "Techniker für digitale Grafikprozesse", cv_edu2_school: "Technische Schule Nr. 4 in Jasło",
+    cv_cert_a54: "A54 Qualifikation: Pre-Press Vorbereitung",
+    cv_cert_a55: "A55 Qualifikation: Digitaldruck",
+    cv_cert_a25: "A25 Qualifikation: Multimedia-Projekte",
+    cv_cert_social: "The Social Media Marketing Masterclass 2024",
+    cv_cert_masterclass: "Graphic Design Masterclass Intermediate"
   }
 };
 

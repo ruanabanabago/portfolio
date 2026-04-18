@@ -990,6 +990,7 @@ img { max-width: 100%; display: block; }
   :root { --sidebar-w: 0px; }
   .sidebar {
     transform: translateX(-100%); width: 260px;
+    height: 100dvh;
     overflow-y: auto; overflow-x: hidden;
   }
   .sidebar.open { transform: translateX(0); }
@@ -1001,14 +1002,14 @@ img { max-width: 100%; display: block; }
   .sidebar-toggle svg { width: 20px; height: 20px; }
 
   /* Kompaktowy sidebar na mobile — bez potrzeby scrollowania */
-  .sidebar-header { padding: 18px 16px 14px; }
-  .sidebar-nav { padding: 10px 10px; gap: 2px; }
-  .nav-item { padding: 9px 12px; font-size: 10px; }
-  .sidebar-footer { padding: 10px 16px 14px; }
-  .sidebar-status { margin-top: 8px !important; margin-bottom: 6px !important; }
-  .lang-switcher { padding: 12px 16px 0; }
+  .sidebar-header { padding: 12px 14px 8px; }
+  .sidebar-nav { padding: 4px 10px; gap: 0px; }
+  .nav-item { padding: 8px 12px; font-size: 10px; margin-bottom: 2px; }
+  .lang-switcher { padding: 10px 16px 0; justify-content: center; border-top: 1px solid rgba(255,255,255,0.05); }
   .lang-btn svg { width: 20px; height: 14px; }
-  .sidebar-social { gap: 8px; margin-bottom: 0 !important; }
+  .sidebar-footer { padding: 6px 16px 14px; }
+  .sidebar-social { justify-content: center; gap: 8px; margin-bottom: 6px !important; }
+  .sidebar-status { justify-content: center; margin-top: 0 !important; margin-bottom: 0 !important; }
   .social-icon { width: 28px; height: 28px; }
   .social-icon svg { width: 13px; height: 13px; }
 
