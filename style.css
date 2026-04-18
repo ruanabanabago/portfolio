@@ -113,8 +113,9 @@ img { max-width: 100%; display: block; }
   display: flex; flex-direction: column;
   z-index: 200;
   backdrop-filter: blur(32px);
-  box-shadow: 4px 0 60px rgba(0,0,0,.6), 0 0 0 0 var(--green);
+  box-shadow: 4px 0 60px rgba(0,0,0,.6);
   transition: transform .3s var(--ease);
+  overflow-y: auto;
 }
 /* Left neon strip */
 .sidebar::before {
@@ -473,8 +474,8 @@ img { max-width: 100%; display: block; }
    FEATURED GRID (HOME)
    ============================================================ */
 .featured-grid {
-  display: grid; grid-template-columns: repeat(5,1fr);
-  gap: 14px;
+  display: grid; grid-template-columns: repeat(6,1fr);
+  gap: 12px;
 }
 
 /* ============================================================
@@ -551,7 +552,7 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 0 18px rgba(57,255,20,.1);
 }
 .projects-bento {
-  display: grid; grid-template-columns: repeat(5,1fr);
+  display: grid; grid-template-columns: repeat(6,1fr);
   gap: 12px;
   grid-auto-flow: dense;
 }
@@ -964,15 +965,19 @@ img { max-width: 100%; display: block; }
 /* ============================================================
    RESPONSIVE
    ============================================================ */
+@media (max-width: 1400px) {
+  .projects-bento      { grid-template-columns: repeat(5,1fr); }
+  .featured-grid       { grid-template-columns: repeat(5,1fr); }
+}
 @media (max-width: 1300px) {
-  .projects-bento      { grid-template-columns: repeat(3,1fr); }
-  .featured-grid       { grid-template-columns: repeat(3,1fr); }
+  .projects-bento      { grid-template-columns: repeat(4,1fr); }
+  .featured-grid       { grid-template-columns: repeat(4,1fr); }
 }
 @media (max-width: 1100px) {
   .stats-row          { grid-template-columns: repeat(2,1fr); }
   .categories-grid    { grid-template-columns: repeat(2,1fr); }
-  .featured-grid      { grid-template-columns: repeat(2,1fr); }
-  .projects-bento     { grid-template-columns: repeat(2,1fr); }
+  .featured-grid      { grid-template-columns: repeat(3,1fr); }
+  .projects-bento     { grid-template-columns: repeat(3,1fr); }
   .about-bento        { grid-template-columns: repeat(2,1fr); }
   .contact-bento      { grid-template-columns: repeat(2,1fr); }
   .bio-card           { grid-column: span 2; }
@@ -983,7 +988,10 @@ img { max-width: 100%; display: block; }
 }
 @media (max-width: 768px) {
   :root { --sidebar-w: 0px; }
-  .sidebar { transform: translateX(-100%); width: 268px; }
+  .sidebar {
+    transform: translateX(-100%); width: 260px;
+    overflow-y: auto; overflow-x: hidden;
+  }
   .sidebar.open { transform: translateX(0); }
   .sidebar-toggle {
     display: flex; width: 40px; height: 40px; border-radius: 8px;
@@ -991,23 +999,80 @@ img { max-width: 100%; display: block; }
     color: var(--txt); align-items: center; justify-content: center; cursor: pointer;
   }
   .sidebar-toggle svg { width: 20px; height: 20px; }
-  
+
+  /* Kompaktowy sidebar na mobile — bez potrzeby scrollowania */
+  .sidebar-header { padding: 18px 16px 14px; }
+  .sidebar-nav { padding: 10px 10px; gap: 2px; }
+  .nav-item { padding: 9px 12px; font-size: 10px; }
+  .sidebar-footer { padding: 10px 16px 14px; }
+  .sidebar-status { margin-top: 8px !important; margin-bottom: 6px !important; }
+  .lang-switcher { padding: 12px 16px 0; }
+  .lang-btn svg { width: 20px; height: 14px; }
+  .sidebar-social { gap: 8px; margin-bottom: 0 !important; }
+  .social-icon { width: 28px; height: 28px; }
+  .social-icon svg { width: 13px; height: 13px; }
+
   .mobile-header {
     display: flex; position: fixed; top: 0; left: 0; right: 0; z-index: 300;
-    height: 64px; background: rgba(6,6,16, 0.92); backdrop-filter: blur(16px);
+    height: 60px; background: rgba(6,6,16, 0.95); backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
     align-items: center; justify-content: space-between; padding: 0 16px;
   }
-  .mobile-logo { font-size: 15px; font-weight: 800; color: var(--txt); letter-spacing: 2px; }
+  .mobile-logo { font-size: 14px; font-weight: 800; color: var(--txt); letter-spacing: 2px; }
   .mobile-logo .logo-bracket { color: var(--green); }
-  
+
   .main-content  { margin-left: 0; }
-  .page-inner    { padding: 90px 16px 48px; }
-  .stats-row     { grid-template-columns: repeat(2,1fr); }
-  .categories-grid, .featured-grid, .projects-bento, .about-bento, .contact-bento { grid-template-columns: 1fr; }
+  .page-inner    { padding: 84px 12px 48px; }
+  .stats-row     { grid-template-columns: repeat(2,1fr); gap: 10px; }
+
+  /* Projekty i featured — 2 kolumny na mobile */
+  .featured-grid   { grid-template-columns: repeat(2,1fr); gap: 8px; }
+  .projects-bento  { grid-template-columns: repeat(2,1fr); gap: 8px; }
+
+  /* About i contact — 1 kolumna */
+  .about-bento, .contact-bento { grid-template-columns: 1fr; }
   .bio-card, .skills-card, .exp-card, .tools-card, .contact-hero-card { grid-column: span 1; grid-row: span 1; }
   .project-card.span-2 { grid-column: span 1; }
   .bio-card { flex-direction: column; }
+
+  /* Kategorie na mobile — 1 kolumna */
+  .categories-grid { grid-template-columns: 1fr; }
+
+  /* Mniejszy aspect-ratio na mobile — karty nie za wysokie */
+  .project-card { aspect-ratio: 4 / 5; }
+
+  /* Modal na mobile */
+  .modal-overlay { padding: 12px; align-items: center; }
+  .project-modal {
+    width: 100%; max-width: 100%;
+    border-radius: 16px;
+    max-height: 92vh;
+  }
+  /* Video modal na mobile — krótszy, kontrolki widoczne */
+  .project-modal.video-modal {
+    max-width: 100%;
+    max-height: 92vh;
+  }
+  .video-modal .modal-img {
+    height: 42vh;
+    min-height: 180px;
+  }
+  .video-modal .modal-img video {
+    border-radius: 14px 14px 0 0;
+  }
+  /* Portrait i carousel na mobile */
+  .project-modal.portrait-modal,
+  .project-modal.carousel-modal,
+  .project-modal.landscape-modal {
+    max-width: 100%;
+  }
+  .portrait-modal .modal-img { min-height: 220px; max-height: 55vh; }
+  .carousel-modal .modal-img { min-height: 200px; max-height: 50vh; }
+  .landscape-modal .modal-img { min-height: 180px; }
+
+  .modal-close { top: 12px; right: 12px; width: 36px; height: 36px; }
+  .modal-body { padding: 16px 18px 20px; }
+  .modal-title { font-size: 20px; }
 }
 /* ============================================================
    AUTH SCREEN (GATEKEEPER)

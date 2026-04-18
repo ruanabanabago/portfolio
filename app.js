@@ -616,6 +616,12 @@ function renderProjects(filter) {
       }
     }
     list = mixed;
+    // Plakat 1 (id=11) przesuń niżej — nie powinien być pierwszym plakatem
+    const p1idx = list.findIndex(p => p.id === 11);
+    if (p1idx !== -1) {
+      const [p1item] = list.splice(p1idx, 1);
+      list.splice(Math.min(p1idx + 18, list.length), 0, p1item);
+    }
   }
 
   // For Posty: carousels first, Neocardiosim + Enfoglobe FL2 last
