@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-ps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "detect-libc": "^2.1.2",
+    "semver": "^7.7.4",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruanabanabago/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ruanabanabago/portfolio/issues"
+  },
+  "homepage": "https://github.com/ruanabanabago/portfolio#readme"
+}

@@ -858,11 +858,39 @@ document.getElementById('main-content').addEventListener('click', () => {
 });
 
 // ============================================================
+// THEME SWITCHER
+// ============================================================
+function initThemeSwitcher() {
+  const checkbox = document.getElementById('theme-checkbox');
+  if (!checkbox) return;
+  const storedTheme = localStorage.getItem('portfolio_theme') || 'dark';
+
+  if (storedTheme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    checkbox.checked = true;
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    checkbox.checked = false;
+  }
+
+  checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('portfolio_theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('portfolio_theme', 'dark');
+    }
+  });
+}
+
+// ============================================================
 // INIT
 // ============================================================
 (function init() {
   checkAuth();
   initI18n();
+  initThemeSwitcher();
   renderFeaturedProjects();
   renderProjects('all'); // pre-render for first visit
 
