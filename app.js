@@ -198,8 +198,8 @@ function setLanguage(lang) {
     if (TRANSLATIONS[lang][key]) el.placeholder = TRANSLATIONS[lang][key];
   });
   
-  // Update document language
-  document.documentElement.lang = lang;
+  // Update document language (data attribute – nie zmieniamy lang, bo Chrome Translate wywołuje re-tłumaczenie)
+  document.documentElement.setAttribute('data-lang', lang);
   
   // Update switcher buttons
   document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -541,16 +541,16 @@ function renderFeaturedProjects() {
 // PROJECT CARD HTML BUILDER
 // ============================================================
 function projectCardHTML(p, bento = true) {
-  // span-2 tylko dla Plakatów i Pozostałe poziomych
-  const extraClass = ((p.category === 'Plakaty' || p.category === 'Pozostałe') && p.span === 'large') ? 'span-2' : '';
+  // span-2 tylko dla Pozostałe (poziome kartki/plakaty szerokie) - NIE dla Plakatów A4 które są pionowe!
+  const extraClass = (p.category === 'Pozostałe' && p.span === 'large') ? 'span-2' : '';
   const hasImages = p.images && p.images.length > 0;
   const isCarousel = p.images && p.images.length > 1;
   
   const bgStyle = hasImages 
     ? `background-image: url('${p.images[0]}'); background-size: cover; background-position: center;`
-    : `background:${p.bg}`;
+    : (p.bg ? `background:${p.bg}` : '');
     
-  const emojiHtml = hasImages ? '' : `<span class="proj-thumb-emoji">${p.emoji}</span>`;
+  const emojiHtml = hasImages ? '' : (p.emoji ? `<span class="proj-thumb-emoji">${p.emoji}</span>` : '');
   
   const hasVideo = !!p.video;
   
@@ -663,7 +663,6 @@ let currentCarouselIndex = 0;
 let currentProject = null;
 
 function openModal(id) {
-  // Upewniamy się, że omijamy puste pola (sparse arrays) wykluczając undefined w find()
   const p = PROJECTS.find(x => x && x.id === id);
   if (!p) return;
   currentProject = p;
@@ -674,16 +673,17 @@ function openModal(id) {
   document.getElementById('modal-desc').textContent  = p.desc || '';
 
   const imgEl = document.getElementById('modal-img');
-  imgEl.style.background = p.bg || 'var(--bg)';
-  
   const modalEl = document.querySelector('.project-modal');
   
+  // Reset wszystkich klas modalnych
+  modalEl.classList.remove('video-modal', 'landscape-modal', 'portrait-modal', 'carousel-modal');
+  imgEl.style.background = p.bg || '#0a0a12';
+  
   if (p.video) {
+    // WIDEO
     if (p.landscape) {
-      modalEl.classList.remove('video-modal');
       modalEl.classList.add('landscape-modal');
     } else {
-      modalEl.classList.remove('landscape-modal');
       modalEl.classList.add('video-modal');
     }
     imgEl.style.background = '#000';
@@ -692,17 +692,28 @@ function openModal(id) {
         style="border-radius:20px 20px 0 0;"
         playsinline>
       </video>`;
+  } else if (p.images && p.images.length > 1) {
+    // KARUZELA — szeroki modal
+    modalEl.classList.add('carousel-modal');
+    updateCarouselMarkup();
+  } else if (p.images && p.images.length === 1) {
+    // POJEDYNCZY OBRAZ — wykrywamy proporcje i ustawiamy modal
+    const img = new Image();
+    img.onload = function() {
+      if (this.naturalHeight > this.naturalWidth) {
+        // Obraz pionowy (portret) → wąski modal
+        modalEl.classList.add('portrait-modal');
+      } else {
+        // Obraz poziomy lub kwadratowy → szeroki modal
+        modalEl.classList.add('landscape-modal');
+      }
+    };
+    img.src = p.images[0];
+    imgEl.innerHTML = `<img src="${p.images[0]}" />`;
+  } else if (p.emoji) {
+    imgEl.innerHTML = `<span style="font-size:100px;opacity:.08;user-select:none">${p.emoji}</span>`;
   } else {
-    modalEl.classList.remove('video-modal', 'landscape-modal');
-    if (p.images && p.images.length > 1) {
-      updateCarouselMarkup();
-    } else if (p.images && p.images.length === 1) {
-      imgEl.innerHTML = `<img src="${p.images[0]}" />`;
-    } else if (p.emoji) {
-      imgEl.innerHTML = `<span style="font-size:100px;opacity:.08;user-select:none">${p.emoji}</span>`;
-    } else {
-      imgEl.innerHTML = '';
-    }
+    imgEl.innerHTML = '';
   }
 
   document.getElementById('modal-tags').innerHTML =
