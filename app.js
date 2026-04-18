@@ -93,7 +93,19 @@ const TRANSLATIONS = {
     auth_subtitle: "Ta strona jest chroniona hasłem. Wprowadź klucz dostępu, aby kontynuować.",
     auth_placeholder: "Hasło...",
     auth_btn: "WEJDŹ",
-    auth_error: "Błędne hasło. Spróbuj ponownie."
+    auth_error: "Błędne hasło. Spróbuj ponownie.",
+    
+    menu_cv: "CV", cv_available: "Dostępny do pracy", cv_job_title: "AI-Powered Graphic Designer",
+    cv_exp_title: "Doświadczenie zawodowe", cv_cert_title: "Certyfikaty", cv_edu_title: "Wykształcenie",
+    cv_skill_ai_img: "Gen. Obrazów AI", cv_skill_ai_vid: "Gen. Wideo AI",
+    cv_job1_title: "Projektant Graficzny", cv_job1_date: "Luty 2025 — Obecnie", cv_fulltime: "· Pełny etat",
+    cv_job1_b1: "Tworzenie materiałów graficznych na potrzeby social media (Facebook, Instagram) oraz kampanii e-mail", cv_job1_b2: "Projektowanie banerów, kreacji reklamowych i layoutów na stronę internetową urlop.pl", cv_job1_b3: "Produkcja animowanych grafik i rolków promujących oferty biura podróży", cv_job1_b4: "Tworzenie materiałów DTP: katalogi, ulotki, plakaty, wizytówki", cv_job1_b5: "Współpraca z działem marketingu przy kampaniach sezonowych i last-minute",
+    cv_job2_title: "Grafik Freelancer", cv_job2_company: "Praca zdalna / Freelance", cv_job2_date: "2021 — Obecnie",
+    cv_job2_b1: "Kompleksowe projekty identyfikacji wizualnej dla firm z różnych branż", cv_job2_b2: "Tworzenie animacji motion graphics oraz rolków na potrzeby social media", cv_job2_b3: "Obsługa klientów m.in. Seqma, Vision4U, Drukarnia Jasło, APS Data, Ranczo Rumak, OSCA Courts", cv_job2_b4: "Wykorzystanie generatywnej AI (Midjourney, Sora, Kling, Seedream) do produkcji contentu",
+    cv_job3_title: "Grafik Komputerowy", cv_hybrid: "· Hybrydowo",
+    cv_job3_b1: "Projektowanie platform do zarządzania zdrowiem i kursów VR dla rynku amerykańskiego", cv_job3_b2: "Tworzenie prezentacji i materiałów marketingowych dla uniwersytetów w USA", cv_job3_b3: "Praca w środowisku międzynarodowym w języku angielskim",
+    cv_job4_title: "Projektant Graficzny (Staż)",
+    cv_job4_b1: "Montaż reklam i wizualizacje odzieży reklamowej", cv_job4_b2: "Tworzenie witryn i katalogów dla biura podróży"
   },
   en: {
     menu_home: "HOME", menu_projects: "PROJECTS", menu_about: "ABOUT ME", menu_contact: "CONTACT", sidebar_sm: "FOLLOW MY SOCIALS:",
@@ -131,7 +143,19 @@ const TRANSLATIONS = {
     auth_subtitle: "This page is password protected. Please enter the access key to continue.",
     auth_placeholder: "Password...",
     auth_btn: "ENTER",
-    auth_error: "Incorrect password. Try again."
+    auth_error: "Incorrect password. Try again.",
+    
+    menu_cv: "RESUME", cv_available: "Available for Work", cv_job_title: "AI-Powered Graphic Designer",
+    cv_exp_title: "Work Experience", cv_cert_title: "Certifications", cv_edu_title: "Education",
+    cv_skill_ai_img: "AI Image Gen.", cv_skill_ai_vid: "AI Video Gen.",
+    cv_job1_title: "Graphic Designer", cv_job1_date: "February 2025 — Present", cv_fulltime: "· Full-time",
+    cv_job1_b1: "Creating graphic materials for social media (Facebook, Instagram) and email campaigns", cv_job1_b2: "Designing banners, advertising creatives, and layouts for the urlop.pl website", cv_job1_b3: "Producing animated graphics and reels promoting travel agency offers", cv_job1_b4: "Creating DTP materials: catalogs, flyers, posters, business cards", cv_job1_b5: "Collaborating with the marketing department on seasonal and last-minute campaigns",
+    cv_job2_title: "Freelance Graphic Designer", cv_job2_company: "Remote / Freelance", cv_job2_date: "2021 — Present",
+    cv_job2_b1: "Comprehensive visual identity projects for companies in various industries", cv_job2_b2: "Creating motion graphics animations and reels for social media", cv_job2_b3: "Serving clients including Seqma, Vision4U, Jasło Printing House, APS Data, Rumak Ranch, OSCA Courts", cv_job2_b4: "Using generative AI (Midjourney, Sora, Kling, Seedream) for content production",
+    cv_job3_title: "Computer Graphic Designer", cv_hybrid: "· Hybrid",
+    cv_job3_b1: "Designing health management platforms and VR courses for the US market", cv_job3_b2: "Creating presentations and marketing materials for US universities", cv_job3_b3: "Working in an international environment in English",
+    cv_job4_title: "Graphic Designer (Intern)",
+    cv_job4_b1: "Editing advertisements and visualizing promotional clothing", cv_job4_b2: "Creating websites and catalogs for a travel agency"
   },
   de: {
     menu_home: "STARTSEITE", menu_projects: "PROJEKTE", menu_about: "ÜBER MICH", menu_contact: "KONTAKT", sidebar_sm: "FOLGEN SIE MEINEN SM:",
@@ -169,7 +193,19 @@ const TRANSLATIONS = {
     auth_subtitle: "Diese Seite ist passwortgeschützt. Bitte geben Sie den Zugangsschlüssel ein, um fortzufahren.",
     auth_placeholder: "Passwort...",
     auth_btn: "EINTRETEN",
-    auth_error: "Falsches Passwort. Versuchen Sie es erneut."
+    auth_error: "Falsches Passwort. Versuchen Sie es erneut.",
+    
+    menu_cv: "LEBENSLAUF", cv_available: "Verfügbar für Arbeit", cv_job_title: "AI-Powered Graphic Designer",
+    cv_exp_title: "Berufserfahrung", cv_cert_title: "Zertifizierungen", cv_edu_title: "Ausbildung",
+    cv_skill_ai_img: "KI-Bildgenerierung", cv_skill_ai_vid: "KI-Videogenerierung",
+    cv_job1_title: "Grafikdesigner", cv_job1_date: "Februar 2025 — Heute", cv_fulltime: "· Vollzeit",
+    cv_job1_b1: "Erstellung von Grafikmaterialien für Social Media (Facebook, Instagram) und E-Mail-Kampagnen", cv_job1_b2: "Gestaltung von Bannern, Werbemitteln und Layouts für die Website urlop.pl", cv_job1_b3: "Produktion von animierten Grafiken und Reels zur Förderung von Reiseangeboten", cv_job1_b4: "Erstellung von DTP-Materialien: Kataloge, Flyer, Plakate, Visitenkarten", cv_job1_b5: "Zusammenarbeit mit der Marketingabteilung bei saisonalen und Last-Minute-Kampagnen",
+    cv_job2_title: "Freiberuflicher Grafikdesigner", cv_job2_company: "Fernarbeit / Freiberuflich", cv_job2_date: "2021 — Heute",
+    cv_job2_b1: "Umfassende visuelle Identitätsprojekte für Unternehmen aus verschiedenen Branchen", cv_job2_b2: "Erstellung von Motion Graphics Animationen und Reels für Social Media", cv_job2_b3: "Betreuung von Kunden wie Seqma, Vision4U, Druckerei Jasło, APS Data, Ranch Rumak, OSCA Courts", cv_job2_b4: "Nutzung generativer KI (Midjourney, Sora, Kling, Seedream) für die Content-Produktion",
+    cv_job3_title: "Computergrafikdesigner", cv_hybrid: "· Hybrid",
+    cv_job3_b1: "Gestaltung von Gesundheitsmanagement-Plattformen und VR-Kursen für den US-Markt", cv_job3_b2: "Erstellung von Präsentationen und Marketingmaterialien für US-Universitäten", cv_job3_b3: "Arbeiten in einem internationalen Umfeld auf Englisch",
+    cv_job4_title: "Grafikdesigner (Praktikant)",
+    cv_job4_b1: "Bearbeitung von Werbung und Visualisierung von Werbebekleidung", cv_job4_b2: "Erstellung von Websites und Katalogen für ein Reisebüro"
   }
 };
 
