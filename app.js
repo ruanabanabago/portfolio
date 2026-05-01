@@ -297,7 +297,7 @@ const PROJECTS = [
   {"id":402,"category":"Animacje","title":"Animacja 7","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 7.mp4","accent":"#39FF14","span":"normal"},
   {"id":403,"category":"Animacje","title":"Animacja 8","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 8.mp4","accent":"#39FF14","span":"normal"},
   {"id":404,"category":"Animacje","title":"Animacja 9","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 9.mp4","landscape":true,"accent":"#39FF14","span":"normal"},
-  {"id":405,"category":"Animacje","title":"Animacja 10","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 10.mp4","landscape":true,"accent":"#39FF14","span":"normal"},
+
 
 
   // ROLKI
@@ -320,7 +320,7 @@ const PROJECTS = [
   {"id":314,"category":"Rolki","title":"Rolka 17","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 17.mp4","accent":"#BF5FFF","span":"normal"},
 
   // PLAKATY
-  {"id":11,"category":"Plakaty","title":"Plakat 1","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 1.webp"],"span":"normal","accent":"#FFA139"},
+
   {"id":12,"category":"Plakaty","title":"Plakat 2","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 2.webp"],"span":"normal","accent":"#FFA139"},
   {"id":500,"category":"Plakaty","title":"Plakat 3","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 3.webp"],"span":"normal","accent":"#FFA139"},
   {"id":501,"category":"Plakaty","title":"Plakat 4","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 4.webp"],"span":"normal","accent":"#FFA139"},
@@ -345,7 +345,7 @@ const PROJECTS = [
   {"id":520,"category":"Plakaty","title":"Plakat 23","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 23.webp"],"span":"normal","accent":"#FFA139"},
   {"id":521,"category":"Plakaty","title":"Plakat 24","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 24.webp"],"span":"normal","accent":"#FFA139"},
   {"id":522,"category":"Plakaty","title":"Plakat 25","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 25.webp"],"span":"normal","accent":"#FFA139"},
-  {"id":523,"category":"Plakaty","title":"Plakat 26","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 26.webp"],"span":"normal","accent":"#FFA139"},
+
   {"id":524,"category":"Plakaty","title":"Plakat 27","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 27.webp"],"span":"normal","accent":"#FFA139"},
   {"id":525,"category":"Plakaty","title":"Plakat 28","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 28.webp"],"span":"normal","accent":"#FFA139"},
   {"id":526,"category":"Plakaty","title":"Plakat 29","desc":"Plakat / projekt graficzny.","tags":["Print Design","Photoshop","Poster"],"images":["img/projects/plakaty/Plakat 29.webp"],"span":"normal","accent":"#FFA139"},
