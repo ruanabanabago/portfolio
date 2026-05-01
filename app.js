@@ -635,7 +635,7 @@ function projectCardHTML(p, bento = true) {
     <div class="project-card ${extraClass}" onclick="openModal(${p.id})">
       <div class="proj-thumb" style="${bgStyle}">
         ${emojiHtml}
-        ${hasVideo ? `<video src="${p.video}" muted preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>` : ''}
+        ${hasVideo ? `<video src="${p.video}#t=1" muted preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=1;"></video>` : ''}
       </div>
       ${carouselIcon}
       ${videoIcon}
