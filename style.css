@@ -867,8 +867,10 @@ img { max-width: 100%; display: block; }
 }
 .landscape-modal .modal-img {
   height: auto;
-  aspect-ratio: 16 / 9;
   min-height: 0;
+}
+.landscape-modal .modal-img video {
+  aspect-ratio: 16 / 9;
 }
 @keyframes modalIn {
   from { transform: scale(.9) translateY(20px); opacity: 0; }
@@ -1430,5 +1432,76 @@ img { max-width: 100%; display: block; }
     position: fixed;
     top: 15px;
     right: 64px; /* next to hamburger */
+  }
+}
+
+/* ============================================================
+   LIQUID WOW BACKGROUND
+   ============================================================ */
+.liquid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--bg);
+  transition: background 0.3s ease;
+}
+
+.liquid-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.6;
+  animation: blob-spin 20s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+/* Dark mode colors */
+.liquid-blob.blob-1 {
+  width: 60vw;
+  height: 60vw;
+  top: -10vw;
+  left: -10vw;
+  background: rgba(57,255,20, 0.15); /* Green */
+  animation-duration: 25s;
+}
+
+.liquid-blob.blob-2 {
+  width: 50vw;
+  height: 50vw;
+  bottom: -10vw;
+  right: -5vw;
+  background: rgba(191,95,255, 0.15); /* Purple */
+  animation-duration: 22s;
+  animation-direction: alternate-reverse;
+}
+
+.liquid-blob.blob-3 {
+  width: 45vw;
+  height: 45vw;
+  top: 30vh;
+  left: 20vw;
+  background: rgba(0, 150, 255, 0.12); /* Blue */
+  animation-duration: 28s;
+}
+
+/* Light mode overrides */
+[data-theme="light"] .liquid-blob.blob-1 { background: rgba(57,255,20, 0.25); }
+[data-theme="light"] .liquid-blob.blob-2 { background: rgba(191,95,255, 0.25); }
+[data-theme="light"] .liquid-blob.blob-3 { background: rgba(0, 150, 255, 0.20); }
+
+@keyframes blob-spin {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(5vw, 10vh) scale(1.1) rotate(90deg);
+  }
+  66% {
+    transform: translate(-10vw, 5vh) scale(0.9) rotate(180deg);
+  }
+  100% {
+    transform: translate(0, -5vh) scale(1.2) rotate(360deg);
   }
 }
