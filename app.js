@@ -1,56 +1,12 @@
 
 // ============================================================
-// AUTH LOGIC
+// AUTH — WYŁĄCZONE (strona publiczna)
 // ============================================================
-const SITE_PASSWD = "patryk2026";
-
 function checkAuth() {
-  const params = new URLSearchParams(window.location.search);
-  const urlPass = params.get('pass');
-
-  // If password provided in URL, save it and proceed
-  if (urlPass === SITE_PASSWD) {
-    sessionStorage.setItem('portfolio_auth', 'true');
-    // Optional: Clean up URL from the password
-    window.history.replaceState({}, document.title, window.location.pathname);
-  }
-
-  const isAuth = sessionStorage.getItem('portfolio_auth') === 'true';
   const authScreen = document.getElementById('auth-screen');
   const appContainer = document.querySelector('.app');
-
-  if (isAuth) {
-    if (authScreen) authScreen.classList.add('hidden');
-    if (appContainer) appContainer.classList.add('visible');
-  } else {
-    initAuthListeners();
-  }
-}
-
-function initAuthListeners() {
-  const input = document.getElementById('auth-input');
-  const btn = document.getElementById('auth-btn');
-  const error = document.getElementById('auth-error');
-
-  if (!input || !btn) return;
-
-  const tryUnlock = () => {
-    if (input.value === SITE_PASSWD) {
-      sessionStorage.setItem('portfolio_auth', 'true');
-      document.getElementById('auth-screen').classList.add('hidden');
-      document.querySelector('.app').classList.add('visible');
-    } else {
-      error.classList.add('show');
-      input.value = '';
-      input.focus();
-      setTimeout(() => error.classList.remove('show'), 3000);
-    }
-  };
-
-  btn.addEventListener('click', tryUnlock);
-  input.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') tryUnlock();
-  });
+  if (authScreen) authScreen.classList.add('hidden');
+  if (appContainer) appContainer.classList.add('visible');
 }
 
 // ============================================================
@@ -462,7 +418,7 @@ const PROJECTS = [
   {"id":227,"category":"Posty","title":"Post Włochy","desc":"Post promocyjny — Włochy.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/post włochy.webp"],"span":"normal","accent":"#39AAFF"},
 
   // NOWE KARUZELE
-  {"id":228,"category":"Posty","title":"Egipt — Wiza 0","desc":"Karuzela: Egipt bez wizy.","tags":["Social Media","Design","Carousel","urlop.pl"],"images":["img/projects/egipt wiza 0/egipt wiza 0 (1).webp","img/projects/egipt wiza 0/egipt wiza 0 (2).webp","img/projects/egipt wiza 0/egipt wiza 0 (3).webp","img/projects/egipt wiza 0/egipt wiza 0 (4).webp","img/projects/egipt wiza 0/egipt wiza 0 (5).webp"],"span":"normal","accent":"#39FF14"},
+  {"id":228,"category":"Posty","title":"Egipt — Wiza 0","desc":"Karuzela: Egipt bez wizy.","tags":["Social Media","Design","Carousel","urlop.pl"],"images":["img/projects/post egipt wiza 0/egipt wiza 0 (1).webp","img/projects/post egipt wiza 0/egipt wiza 0 (2).webp","img/projects/post egipt wiza 0/egipt wiza 0 (3).webp","img/projects/post egipt wiza 0/egipt wiza 0 (4).webp","img/projects/post egipt wiza 0/egipt wiza 0 (5).webp"],"span":"normal","accent":"#39FF14"},
   {"id":229,"category":"Posty","title":"Post Cypr","desc":"Karuzela: Cypr — oferta wakacyjna.","tags":["Social Media","Design","Carousel","urlop.pl"],"images":["img/projects/post cypr/post cypr (1).webp","img/projects/post cypr/post cypr (2).webp","img/projects/post cypr/post cypr (3).webp","img/projects/post cypr/post cypr (4).webp","img/projects/post cypr/post cypr (5).webp","img/projects/post cypr/post cypr (6).webp"],"span":"large","accent":"#39FF14"},
   {"id":230,"category":"Posty","title":"Dzień Ziemi","desc":"Karuzela: Dzień Ziemi.","tags":["Social Media","Design","Carousel"],"images":["img/projects/post dzien ziemi/post ziemia 1 (1).webp","img/projects/post dzien ziemi/post ziemia 1 (2).webp","img/projects/post dzien ziemi/post ziemia 1 (3).webp","img/projects/post dzien ziemi/post ziemia 1 (4).webp","img/projects/post dzien ziemi/post ziemia 1 (5).webp"],"span":"normal","accent":"#39FF14"}
 ];
