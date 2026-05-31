@@ -771,7 +771,7 @@ function updateCarouselMarkup() {
   }
   
   imgEl.innerHTML = `
-    <div class="carousel-wrap" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center;">
+    <div class="carousel-wrap" style="position:relative; width:100%; flex: 1; min-height: 0; display:flex; align-items:center; justify-content:center;">
       <img src="${images[currentCarouselIndex]}" style="max-width:100%; max-height:100%; object-fit:contain; border-radius:12px;" />
       <button class="carousel-btn prev" onclick="changeCarousel(-1, event)">&#10094;</button>
       <button class="carousel-btn next" onclick="changeCarousel(1, event)">&#10095;</button>
