@@ -1,13 +1,11 @@
 
 // ============================================================
-// AUTH — WYŁĄCZONE (strona publiczna)
+// APP INIT - FADE IN
 // ============================================================
-function checkAuth() {
-  const authScreen = document.getElementById('auth-screen');
+document.addEventListener('DOMContentLoaded', () => {
   const appContainer = document.querySelector('.app');
-  if (authScreen) authScreen.classList.add('hidden');
   if (appContainer) appContainer.classList.add('visible');
-}
+});
 
 // ============================================================
 // I18N (TRANSLATIONS)
