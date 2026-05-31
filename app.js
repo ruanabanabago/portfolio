@@ -857,7 +857,8 @@ function initThemeSwitcher() {
 // INIT
 // ============================================================
 (function init() {
-  checkAuth();
+  // checkAuth usunięte
+
   initI18n();
   initThemeSwitcher();
   renderFeaturedProjects();
