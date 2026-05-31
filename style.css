@@ -841,12 +841,11 @@ img { max-width: 100%; display: block; }
   max-height: 90vh;
 }
 .portrait-modal .modal-img {
-  min-height: 320px;
-  max-height: 75vh;
-  flex: 0 0 auto;
+  min-height: 0;
+  flex: 1 1 auto;
 }
 .portrait-modal .modal-img img {
-  max-height: 75vh;
+  max-height: 100%;
   max-width: 100%;
   object-fit: contain;
 }
@@ -856,8 +855,7 @@ img { max-width: 100%; display: block; }
   max-height: 90vh;
 }
 .carousel-modal .modal-img {
-  min-height: 400px;
-  max-height: 72vh;
+  min-height: 0;
   flex: 1 1 auto;
 }
 /* Poziome wideo (16:9) — szeroki modal */
@@ -1095,9 +1093,9 @@ img { max-width: 100%; display: block; }
   .project-modal.landscape-modal {
     max-width: 100%;
   }
-  .portrait-modal .modal-img { min-height: 220px; max-height: 55vh; }
-  .carousel-modal .modal-img { min-height: 200px; max-height: 50vh; }
-  .landscape-modal .modal-img { min-height: 180px; }
+  .portrait-modal .modal-img { min-height: 0; max-height: 60vh; flex: 1 1 auto; }
+  .carousel-modal .modal-img { min-height: 0; max-height: 55vh; flex: 1 1 auto; }
+  .landscape-modal .modal-img { min-height: 0; }
 
   .modal-close { top: 12px; right: 12px; width: 36px; height: 36px; }
   .modal-body { padding: 16px 18px 20px; }
