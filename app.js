@@ -449,7 +449,22 @@ const PROJECTS = [
   {"id":220,"category":"Posty","title":"Post urlop.pl (21)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (21).webp"],"span":"normal","accent":"#39AAFF"},
   {"id":221,"category":"Posty","title":"Post urlop.pl (22)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (22).webp"],"span":"normal","accent":"#39AAFF"},
   {"id":222,"category":"Posty","title":"Post urlop.pl (23)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (23).webp"],"span":"normal","accent":"#39AAFF"},
-  {"id":223,"category":"Posty","title":"Post urlop.pl (24)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (24).webp"],"span":"normal","accent":"#39AAFF"}
+  {"id":223,"category":"Posty","title":"Post urlop.pl (24)","desc":"Post promocyjny dla urlop.pl.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/posty urlop/Post urlop (24).webp"],"span":"normal","accent":"#39AAFF"},
+
+  // NOWE ROLKI
+  {"id":315,"category":"Rolki","title":"Rolka 18","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 18.mp4","accent":"#BF5FFF","span":"normal"},
+  {"id":316,"category":"Rolki","title":"Rolka 19","desc":"Rolka social media.","tags":["Reels","Video","Social Media"],"video":"video/rolki/Rolka 19.mp4","accent":"#BF5FFF","span":"normal"},
+
+  // NOWE POSTY POJEDYNCZE
+  {"id":224,"category":"Posty","title":"1 maja","desc":"Post na Święto Pracy.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/1 maja.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":225,"category":"Posty","title":"2 maja","desc":"Post na Dzień Flagi.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/2 maja.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":226,"category":"Posty","title":"3 maja","desc":"Post na Święto Konstytucji.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/3 maja.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":227,"category":"Posty","title":"Post Włochy","desc":"Post promocyjny — Włochy.","tags":["Social Media","Design","urlop.pl"],"images":["img/projects/post włochy.webp"],"span":"normal","accent":"#39AAFF"},
+
+  // NOWE KARUZELE
+  {"id":228,"category":"Posty","title":"Egipt — Wiza 0","desc":"Karuzela: Egipt bez wizy.","tags":["Social Media","Design","Carousel","urlop.pl"],"images":["img/projects/egipt wiza 0/egipt wiza 0 (1).webp","img/projects/egipt wiza 0/egipt wiza 0 (2).webp","img/projects/egipt wiza 0/egipt wiza 0 (3).webp","img/projects/egipt wiza 0/egipt wiza 0 (4).webp","img/projects/egipt wiza 0/egipt wiza 0 (5).webp"],"span":"normal","accent":"#39FF14"},
+  {"id":229,"category":"Posty","title":"Post Cypr","desc":"Karuzela: Cypr — oferta wakacyjna.","tags":["Social Media","Design","Carousel","urlop.pl"],"images":["img/projects/post cypr/post cypr (1).webp","img/projects/post cypr/post cypr (2).webp","img/projects/post cypr/post cypr (3).webp","img/projects/post cypr/post cypr (4).webp","img/projects/post cypr/post cypr (5).webp","img/projects/post cypr/post cypr (6).webp"],"span":"large","accent":"#39FF14"},
+  {"id":230,"category":"Posty","title":"Dzień Ziemi","desc":"Karuzela: Dzień Ziemi.","tags":["Social Media","Design","Carousel"],"images":["img/projects/post dzien ziemi/post ziemia 1 (1).webp","img/projects/post dzien ziemi/post ziemia 1 (2).webp","img/projects/post dzien ziemi/post ziemia 1 (3).webp","img/projects/post dzien ziemi/post ziemia 1 (4).webp","img/projects/post dzien ziemi/post ziemia 1 (5).webp"],"span":"normal","accent":"#39FF14"}
 ];
 
 // ============================================================
