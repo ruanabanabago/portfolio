@@ -242,15 +242,17 @@ function initI18n() {
 // ============================================================
 const PROJECTS = [
   // ANIMACJE
+  {"id":1013,"category":"Animacje","title":"Animacja Last Minute","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja Last Minute.mp4","span":"normal","accent":"#39FF14"},
+  {"id":1014,"category":"Animacje","title":"wersja 2","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/wersja 2.mp4","span":"normal","accent":"#39FF14"},
   {"id":1,"category":"Animacje","title":"Animacja 1","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 1.mp4","accent":"#39FF14","span":"normal"},
   {"id":2,"category":"Animacje","title":"Animacja 2","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 2.mp4","landscape":true,"accent":"#39FF14","span":"normal"},
   {"id":3,"category":"Animacje","title":"Animacja 3","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 3.mp4","accent":"#39FF14","span":"normal"},
   {"id":4,"category":"Animacje","title":"Animacja 4","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 4.mp4","landscape":true,"accent":"#39FF14","span":"normal"},
   {"id":400,"category":"Animacje","title":"Animacja 5","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 5.mp4","accent":"#39FF14","span":"normal"},
   {"id":401,"category":"Animacje","title":"Animacja 6","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 6.mp4","accent":"#39FF14","span":"normal"},
-  {"id":402,"category":"Animacje","title":"Animacja 7","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 7.mp4","accent":"#39FF14","span":"normal"},
   {"id":403,"category":"Animacje","title":"Animacja 8","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 8.mp4","accent":"#39FF14","span":"normal"},
-  {"id":404,"category":"Animacje","title":"Animacja 9","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 9.mp4","landscape":true,"accent":"#39FF14","span":"normal"},
+
+
 
 
 
@@ -338,6 +340,19 @@ const PROJECTS = [
   {"id":604,"category":"Pozostałe","title":"Seqma brand hero do prezentacji","desc":"Projekt w kategorii Pozostałe.","tags":["Design","Graphic Design"],"images":["img/projects/pozostale/Seqma brand hero do prezentacji.webp"],"span":"large","accent":"#FFDB39"},
   {"id":605,"category":"Pozostałe","title":"Urlop.pl projekty oraz wizualizacje merch","desc":"Projekt w kategorii Pozostałe.","tags":["Design","Graphic Design"],"images":["img/projects/pozostale/Urlop.pl projekty oraz wizualizacje merch.webp"],"span":"large","accent":"#FFDB39"},
   // NOWE POSTY (Wygenerowane)
+  {"id":1000,"category":"Posty","title":"Ciekawostki o egipcie 1","desc":"Karuzela: Ciekawostki o egipcie 1","tags":["Social Media","Design","Carousel"],"images":["img/projects/posty/Ciekawostki o egipcie 1/1.webp","img/projects/posty/Ciekawostki o egipcie 1/2.webp","img/projects/posty/Ciekawostki o egipcie 1/3.webp","img/projects/posty/Ciekawostki o egipcie 1/4.webp","img/projects/posty/Ciekawostki o egipcie 1/5.webp","img/projects/posty/Ciekawostki o egipcie 1/6.webp"],"span":"large","accent":"#39FF14"},
+  {"id":1001,"category":"Posty","title":"ciekawostki o egipcie 2","desc":"Karuzela: ciekawostki o egipcie 2","tags":["Social Media","Design","Carousel"],"images":["img/projects/posty/ciekawostki o egipcie 2/1.webp","img/projects/posty/ciekawostki o egipcie 2/2.webp","img/projects/posty/ciekawostki o egipcie 2/3.webp","img/projects/posty/ciekawostki o egipcie 2/4.webp","img/projects/posty/ciekawostki o egipcie 2/5.webp","img/projects/posty/ciekawostki o egipcie 2/6.webp"],"span":"large","accent":"#39FF14"},
+  {"id":1002,"category":"Posty","title":"Co dostajesz na tureckim all inclusive","desc":"Karuzela: Co dostajesz na tureckim all inclusive","tags":["Social Media","Design","Carousel"],"images":["img/projects/posty/Co dostajesz na tureckim all inclusive/🍽️ Co naprawdę kryje tureckie All Inclusive 🇹🇷☀️W tej serii pokażemy, czego możesz spodziewać (6).webp","img/projects/posty/Co dostajesz na tureckim all inclusive/🍽️ Co naprawdę kryje tureckie All Inclusive 🇹🇷☀️W tej serii pokażemy, czego możesz spodziewać (7).webp","img/projects/posty/Co dostajesz na tureckim all inclusive/1.webp","img/projects/posty/Co dostajesz na tureckim all inclusive/2.webp","img/projects/posty/Co dostajesz na tureckim all inclusive/3.webp","img/projects/posty/Co dostajesz na tureckim all inclusive/4.webp","img/projects/posty/Co dostajesz na tureckim all inclusive/5.webp","img/projects/posty/Co dostajesz na tureckim all inclusive/6.webp"],"span":"large","accent":"#39FF14"},
+  {"id":1003,"category":"Posty","title":"Dlaczego polacy wracają do turcji","desc":"Karuzela: Dlaczego polacy wracają do turcji","tags":["Social Media","Design","Carousel"],"images":["img/projects/posty/Dlaczego polacy wracają do turcji/1.webp","img/projects/posty/Dlaczego polacy wracają do turcji/2.webp","img/projects/posty/Dlaczego polacy wracają do turcji/3.webp","img/projects/posty/Dlaczego polacy wracają do turcji/4.webp","img/projects/posty/Dlaczego polacy wracają do turcji/5.webp","img/projects/posty/Dlaczego polacy wracają do turcji/6.webp","img/projects/posty/Dlaczego polacy wracają do turcji/7.webp","img/projects/posty/Dlaczego polacy wracają do turcji/8.webp"],"span":"large","accent":"#39FF14"},
+  {"id":1004,"category":"Posty","title":"fakty i mity Emiraty","desc":"Karuzela: fakty i mity Emiraty","tags":["Social Media","Design","Carousel"],"images":["img/projects/posty/fakty i mity Emiraty/1.webp","img/projects/posty/fakty i mity Emiraty/2.webp","img/projects/posty/fakty i mity Emiraty/3.webp","img/projects/posty/fakty i mity Emiraty/4.webp","img/projects/posty/fakty i mity Emiraty/5.webp","img/projects/posty/fakty i mity Emiraty/6.webp"],"span":"large","accent":"#39FF14"},
+  {"id":1005,"category":"Posty","title":"Fakty i mity tunezja","desc":"Karuzela: Fakty i mity tunezja","tags":["Social Media","Design","Carousel"],"images":["img/projects/posty/Fakty i mity tunezja/1.webp","img/projects/posty/Fakty i mity tunezja/2.webp","img/projects/posty/Fakty i mity tunezja/3.webp","img/projects/posty/Fakty i mity tunezja/4.webp","img/projects/posty/Fakty i mity tunezja/5.webp","img/projects/posty/Fakty i mity tunezja/6.webp"],"span":"large","accent":"#39FF14"},
+  {"id":1006,"category":"Posty","title":"Fakty i mity włochy","desc":"Karuzela: Fakty i mity włochy","tags":["Social Media","Design","Carousel"],"images":["img/projects/posty/Fakty i mity włochy/1.webp","img/projects/posty/Fakty i mity włochy/2.webp","img/projects/posty/Fakty i mity włochy/3.webp","img/projects/posty/Fakty i mity włochy/4.webp","img/projects/posty/Fakty i mity włochy/5.webp","img/projects/posty/Fakty i mity włochy/6.webp"],"span":"large","accent":"#39FF14"},
+  {"id":1007,"category":"Posty","title":"Gwarancja ceny 2","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/posty/Gwarancja ceny 2.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":1008,"category":"Posty","title":"Gwarancja ceny","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/posty/Gwarancja ceny.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":1009,"category":"Posty","title":"top 7 hoteli","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/posty/top 7 hoteli.webp"],"span":"normal","accent":"#39AAFF"},
+  {"id":1010,"category":"Posty","title":"Turcja od kuchni","desc":"Karuzela: Turcja od kuchni","tags":["Social Media","Design","Carousel"],"images":["img/projects/posty/Turcja od kuchni/1.webp","img/projects/posty/Turcja od kuchni/2.webp","img/projects/posty/Turcja od kuchni/3.webp","img/projects/posty/Turcja od kuchni/4.webp","img/projects/posty/Turcja od kuchni/5.webp","img/projects/posty/Turcja od kuchni/6.webp","img/projects/posty/Turcja od kuchni/7.webp","img/projects/posty/Turcja od kuchni/8.webp"],"span":"large","accent":"#39FF14"},
+  {"id":1011,"category":"Posty","title":"turcja regiony","desc":"Karuzela: turcja regiony","tags":["Social Media","Design","Carousel"],"images":["img/projects/posty/turcja regiony/1.webp","img/projects/posty/turcja regiony/2.webp","img/projects/posty/turcja regiony/3.webp","img/projects/posty/turcja regiony/4.webp","img/projects/posty/turcja regiony/5.webp","img/projects/posty/turcja regiony/6.webp","img/projects/posty/turcja regiony/7.webp","img/projects/posty/turcja regiony/8.webp","img/projects/posty/turcja regiony/9.webp"],"span":"large","accent":"#39FF14"},
+  {"id":1012,"category":"Posty","title":"Światowy Dzień Zapobiegania Utonięciom","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/posty/Światowy Dzień Zapobiegania Utonięciom.webp"],"span":"normal","accent":"#39AAFF"},
   {"id":100,"category":"Posty","title":"Cover fb dla franczyz","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/cover fb dla franczyz.webp"],"span":"normal","accent":"#39AAFF"},
   {"id":101,"category":"Posty","title":"Grafika informująca o dyżurach","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/grafika informująca o dyżurach.webp"],"span":"normal","accent":"#39AAFF"},
   {"id":102,"category":"Posty","title":"Grafika na konkurs nekera","desc":"Projekt na social media / Post promocyjny.","tags":["Social Media","Design","Post"],"images":["img/projects/grafika na konkurs nekera.webp"],"span":"normal","accent":"#39AAFF"},
@@ -738,11 +753,11 @@ function openModal(id) {
     // POJEDYNCZY OBRAZ — wykrywamy proporcje i ustawiamy modal
     const img = new Image();
     img.onload = function() {
-      if (this.naturalHeight > this.naturalWidth) {
-        // Obraz pionowy (portret) → wąski modal
+      // Jeśli obraz jest pionowy LUB kwadratowy (Instagram style) → wąski modal
+      if (this.naturalHeight >= this.naturalWidth) {
         modalEl.classList.add('portrait-modal');
       } else {
-        // Obraz poziomy lub kwadratowy → szeroki modal
+        // Obraz poziomy → szeroki modal
         modalEl.classList.add('landscape-modal');
       }
     };
