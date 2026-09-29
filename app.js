@@ -242,8 +242,16 @@ function initI18n() {
 // ============================================================
 const PROJECTS = [
   // ANIMACJE
+  {"id":1022,"category":"Animacje","title":"Jesienny GAG","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Jesienny GAG.mp4","span":"normal","accent":"#39FF14"},
+  {"id":1015,"category":"Animacje","title":"Wideo 1","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Wideo 1.mp4","landscape":true,"span":"normal","accent":"#39FF14"},
+  {"id":1016,"category":"Animacje","title":"Wideo 2","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Wideo 2.mp4","landscape":true,"span":"normal","accent":"#39FF14"},
+  {"id":1017,"category":"Animacje","title":"Wideo 3","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Wideo 3.mp4","landscape":true,"span":"normal","accent":"#39FF14"},
+  {"id":1018,"category":"Animacje","title":"Wideo 4","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Wideo 4.mp4","landscape":true,"span":"normal","accent":"#39FF14"},
+  {"id":1019,"category":"Animacje","title":"Wideo 5","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Wideo 5.mp4","landscape":true,"span":"normal","accent":"#39FF14"},
+  {"id":1020,"category":"Animacje","title":"Wideo 6","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Wideo 6.mp4","landscape":true,"span":"normal","accent":"#39FF14"},
+  {"id":1021,"category":"Animacje","title":"Wideo 7","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Wideo 7.mp4","landscape":true,"span":"normal","accent":"#39FF14"},
   {"id":1013,"category":"Animacje","title":"Animacja Last Minute","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja Last Minute.mp4","span":"normal","accent":"#39FF14"},
-  {"id":1014,"category":"Animacje","title":"wersja 2","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/wersja 2.mp4","span":"normal","accent":"#39FF14"},
+  {"id":1014,"category":"Animacje","title":"wersja 2","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/wersja 2.mp4","landscape":true,"span":"normal","accent":"#39FF14"},
   {"id":1,"category":"Animacje","title":"Animacja 1","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 1.mp4","accent":"#39FF14","span":"normal"},
   {"id":2,"category":"Animacje","title":"Animacja 2","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 2.mp4","landscape":true,"accent":"#39FF14","span":"normal"},
   {"id":3,"category":"Animacje","title":"Animacja 3","desc":"Animacja / projekt wideo.","tags":["After Effects","Animation","Motion Graphics"],"video":"video/animacje/Animacja 3.mp4","accent":"#39FF14","span":"normal"},
